@@ -1,0 +1,64 @@
+html {scroll-behavior: smooth}
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+img[alt*="swimming"] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#GoTop {
+  display: none;; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  transition-duration: 300ms;
+}
+
+#GoIng {
+  display: none;; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  top: 50px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  height: 30px;
+  width: 130px;
+  font-size: 12px; /* Increase font size */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  transition-duration: 300ms;
+}
+
+#GoGlob {
+  display: none;; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  top: 85px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  height: 30px;
+  width: 130px;
+  font-size: 12px; /* Increase font size */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  transition-duration: 300ms;
+}
+
+#google_translate_element {
+  padding-top: 25px;
+}
