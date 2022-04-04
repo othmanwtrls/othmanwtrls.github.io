@@ -18,6 +18,10 @@ img[alt*="swimming"] {
   font-size: 10px;
 }
 
+.index-title{
+  font-size: 50px;
+}
+
 #GoTop {
   display: none;; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
