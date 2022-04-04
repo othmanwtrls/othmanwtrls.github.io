@@ -1,0 +1,5 @@
+Todo list :
+
+- Adapt font size of index with the format (computer, phone)
+- Cookies to remember the language with google translate.
+- 
