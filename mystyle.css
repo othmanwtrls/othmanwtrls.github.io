@@ -14,6 +14,10 @@ img[alt*="swimming"] {
   margin-right: auto;
 }
 
+.top-bar-font{
+  font-size: 10px;
+}
+
 #GoTop {
   display: none;; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
