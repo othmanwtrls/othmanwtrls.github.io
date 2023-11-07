@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="mystyle.css">
+    <script src="javascript\scriptIndex.js"></script>
   </head>
-  <body class="w3-black">
+  <body class="w3-black" onload="calculateAge()">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -64,7 +65,7 @@
         <h2 class="w3-text-light-grey">Summary</h2>
         <hr style="width:200px" class="w3-opacity">
         <p>
-          My name is Othman WAETERLOOS, I'm a French engineer and I'm 26 years old. I love
+          My name is Othman WAETERLOOS, I'm a French engineer and I'm <span id="ageResult"></span> years old. I love
           to travel and to discover the world and its secrets. I could, during my short life, work
           in many different fields as an engineer, rescuer, lifeguard, animator or a musician.
           <br>
@@ -104,7 +105,7 @@
 
         <br>
         <div class="">
-          <a href="CV/CV Othman Eng (2022.04.15).pdf" download class="w3-text-light-grey" target="_blank">
+          <a href="CV/CV Othman Eng (2023.11.06).pdf" download class="w3-text-light-grey" target="_blank">
             <img src="image/download.png" class="w3-image" width="20">
             English resume for engineering
           </a>
