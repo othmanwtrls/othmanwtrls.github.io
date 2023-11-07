@@ -8,6 +8,5 @@ function calculateAge() {
     if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDateObj.getDate())) {
       age--;
     }
-    console.log(birthDateObj);
     ageResult.innerHTML = age;
   }
