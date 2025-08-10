@@ -1,0 +1,106 @@
+body {
+  color: #fafafa;
+  background-color: #212121;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,Helvetica,游ゴシック,pingfang sc,STXihei,华文细黑,microsoft yahei,微软雅黑,SimSun,宋体,Heiti,黑体,sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.4em;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.w3-container {
+  margin: 1rem auto;
+  max-width: 80rem;
+  width: 100%;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* ✅ centre verticalement */
+  align-items: center;       /* ✅ centre horizontalement */
+}
+
+.social-icons a i {
+  font-size: 2rem;
+  color: #fafafa;
+  transition: color 0.4s ease;
+}
+
+.social-icons a:hover i {
+  color: #2196f3;
+}
+
+/* Mise côte à côte + wrap sur mobile */
+.cta-row {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Styles unifiés pour les deux boutons */
+.calendly-btn,
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 8px 14px;
+  border: 1px solid #fafafa;
+  border-radius: 9999px; /* pastille */
+  text-decoration: none;
+  color: #fafafa;
+  opacity: .95;
+  transition: transform .15s ease, opacity .15s ease, background-color .2s ease, border-color .2s ease;
+}
+
+.calendly-btn:hover,
+.cv-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  border-color: #2196f3;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+/* Barre compactée */
+nav.w3-bar{ padding:.5rem 0; }
+
+/* Bouton hamburger: taille doigt + cohérence visuelle */
+#hamburgerBtn{
+  width:44px; height:44px; padding:0;
+  display:flex; align-items:center; justify-content:center;
+  border:1px solid #fafafa;
+}
+
+/* Menu mobile: liens alignés à gauche + cibles confortables */
+#mobileMenu .w3-button{
+  text-align:left;
+  padding:12px 14px;
+}
+
+/* Lisibilité & respiration en petit écran */
+@media (max-width:480px){
+  .w3-container{ padding-left:1rem; padding-right:1rem; }
+  .social-icons a i{ font-size:2.2rem; }
+  .cta-row{ gap:.5rem; }
+  .calendly-btn, .cv-link{ width:100%; justify-content:center; }
+}
+
+/* Hauteur d’écran mobile moderne */
+@supports (min-height: 100dvh){
+  body{ min-height:100dvh; }
+}

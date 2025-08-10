@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Categories</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="images/serpent.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,37 +13,81 @@
   
     
   
-  <link rel="stylesheet" href="/css/main.min.57e214921923dde62ff3df8b81bdaed855331fe30d5c67bdcb2a813a03e017cc.css" integrity="sha256-V&#43;IUkhkj3eYv89&#43;Lgb2u2FUzH&#43;MNXGe9yyqBOgPgF8w=">
+  <link rel="stylesheet" href="/css/main.min.fe427fca264362f959c0b07b997a7acd0fd29d9c13b54f49155be5917ae537ad.css" integrity="sha256-/kJ/yiZDYvlZwLB7mXp6zQ/SnZwTtU9JFVvlkXrlN60=">
 </head>
+
+<script>
+  function toggleMenu(){
+    var x = document.getElementById("mobileMenu");
+    var btn = document.getElementById("hamburgerBtn");
+    if (x.className.indexOf("w3-show") === -1) {
+      x.className += " w3-show";
+      btn.setAttribute("aria-expanded", "true");
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  }
+</script>
+
 <body>
 
   <nav class="w3-bar w3-container">
-
   
-  <a href="/" class="w3-bar-item w3-left" style="text-decoration: none;">
+  <a href="/" class="w3-bar-item" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
   </a>
 
   
-  <div class="w3-right">
+  <button id="hamburgerBtn"
+          class="w3-bar-item w3-right w3-border w3-hide-medium w3-hide-large"
+          onclick="toggleMenu()"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  
+  <div class="w3-right w3-hide-small">
     
       
-        <a href="/about/" class="w3-bar-item" style="text-decoration: none;">
+        <a href="/about/" class="w3-bar-item" style="text-decoration:none;">
           About
         </a>
       
-        <a href="/project/" class="w3-bar-item" style="text-decoration: none;">
+        <a href="/project/" class="w3-bar-item" style="text-decoration:none;">
           Project
         </a>
       
-        <a href="/contact/" class="w3-bar-item" style="text-decoration: none;">
+        <a href="/contact/" class="w3-bar-item" style="text-decoration:none;">
           Contact
         </a>
       
     
   </div>
-
 </nav>
+
+
+<div id="mobileMenu" class="w3-hide w3-hide-medium w3-hide-large w3-container">
+  <div class="w3-bar-block w3-card" style="border:1px solid #2b2b2b; background:#212121;">
+    
+      
+        <a href="/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          About
+        </a>
+      
+        <a href="/project/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Project
+        </a>
+      
+        <a href="/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Contact
+        </a>
+      
+    
+  </div>
+</div>
 
 
   <main>
