@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>Categories</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
@@ -11,9 +11,7 @@
   
   
   
-    
-  
-  <link rel="stylesheet" href="/css/main.min.fe427fca264362f959c0b07b997a7acd0fd29d9c13b54f49155be5917ae537ad.css" integrity="sha256-/kJ/yiZDYvlZwLB7mXp6zQ/SnZwTtU9JFVvlkXrlN60=">
+  <link rel="stylesheet" href="/css/main.css" >
 </head>
 
 <script>
@@ -56,8 +54,8 @@
           About
         </a>
       
-        <a href="/project/" class="w3-bar-item" style="text-decoration:none;">
-          Project
+        <a href="/work/" class="w3-bar-item" style="text-decoration:none;">
+          Work
         </a>
       
         <a href="/contact/" class="w3-bar-item" style="text-decoration:none;">
@@ -77,8 +75,8 @@
           About
         </a>
       
-        <a href="/project/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          Project
+        <a href="/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Work
         </a>
       
         <a href="/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
@@ -92,6 +90,85 @@
 
   <main>
     
+<div class="w3-container">
+
+  
+  <h1 class="w3-xxlarge" style="margin-top:0.5rem;">Categories</h1>
+
+  
+  <div class="w3-section">
+    
+    <div class="w3-margin-bottom">
+      <span class="w3-small w3-opacity">Filtrer par rôle</span><br>
+      <button class="chip w3-button w3-round-xxlarge w3-border" data-role="__all">Tous</button>
+      
+    </div>
+
+    
+    <div>
+      <span class="w3-small w3-opacity">Filtrer par techno</span><br>
+      <button class="chip w3-button w3-round-xxlarge w3-border" data-tech="__all">Toutes</button>
+      
+    </div>
+  </div>
+
+  
+  <div class="w3-row-padding">
+    
+    
+    
+  </div>
+</div>
+
+
+<script>
+(function(){
+  var activeRole = "__all";
+  var activeTech = "__all";
+
+  function applyFilter(){
+    var cards = document.querySelectorAll(".work-card");
+    cards.forEach(function(card){
+      var roles = (card.getAttribute("data-roles") || "").split(",").filter(Boolean);
+      var techs = (card.getAttribute("data-tech") || "").split(",").filter(Boolean);
+
+      var matchRole = (activeRole === "__all") || roles.includes(activeRole);
+      var matchTech = (activeTech === "__all") || techs.includes(activeTech);
+
+      card.classList.toggle("w3-hide", !(matchRole && matchTech));
+    });
+  }
+
+  function activateChip(group, value, el){
+    
+    document.querySelectorAll('.chip[data-'+group+']').forEach(function(b){
+      b.classList.remove('chip-active','w3-blue');
+    });
+    
+    el.classList.add('chip-active','w3-blue');
+    
+    if(group === 'role') activeRole = value;
+    if(group === 'tech') activeTech = value;
+    applyFilter();
+  }
+
+  
+  document.querySelectorAll('.chip[data-role]').forEach(function(b){
+    b.addEventListener('click', function(){ activateChip('role', this.dataset.role, this); });
+  });
+  document.querySelectorAll('.chip[data-tech]').forEach(function(b){
+    b.addEventListener('click', function(){ activateChip('tech', this.dataset.tech, this); });
+  });
+
+  
+  var initRole = document.querySelector('.chip[data-role="__all"]');
+  var initTech = document.querySelector('.chip[data-tech="__all"]');
+  if(initRole) initRole.classList.add('chip-active','w3-blue');
+  if(initTech) initTech.classList.add('chip-active','w3-blue');
+  applyFilter();
+})();
+</script>
+
   </main>
 
   <footer class="footer">

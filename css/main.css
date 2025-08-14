@@ -2,7 +2,7 @@ body {
   color: #fafafa;
   background-color: #212121;
   font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,Helvetica,游ゴシック,pingfang sc,STXihei,华文细黑,microsoft yahei,微软雅黑,SimSun,宋体,Heiti,黑体,sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 400;
   line-height: 1.4em;
   
@@ -103,4 +103,36 @@ nav.w3-bar{ padding:.5rem 0; }
 /* Hauteur d’écran mobile moderne */
 @supports (min-height: 100dvh){
   body{ min-height:100dvh; }
+}
+
+/* Cartes Work */
+.work-card{
+  display:block;
+  background:#1b1b1b;
+  border:1px solid #2b2b2b;
+  border-radius:1rem;
+  text-decoration:none;
+  color:#fafafa;
+  margin-bottom:1rem;
+  transition:transform .12s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.work-card:hover{
+  transform:translateY(-2px);
+  border-color:#2196f3;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+/* Rangées de tags */
+.tag-row{ display:flex; flex-wrap:wrap; gap:.5rem; }
+.tag{ padding:.25rem .6rem; opacity:.95; }
+.tag-role{ border-color:#64b5f6; } /* bleu clair */
+.tag-tech{ border-color:#81c784; } /* vert doux */
+
+/* Chips de filtre */
+.chip{ margin:.25rem .25rem 0 0; }
+.chip-active{ color:#fff !important; }
+
+/* Petits écrans: colonne pleine largeur */
+@media (max-width: 992px){
+  .w3-col.m12{ width:100% !important; }
 }

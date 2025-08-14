@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Othman Wtrls Portfolio</title>
-    <link>/</link>
-    <description>Recent content on Othman Wtrls Portfolio</description>
+    <title>Work on Othman Wtrls Portfolio</title>
+    <link>/work/</link>
+    <description>Recent content in Work on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Aug 2025 22:34:09 +0200</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nalys</title>
       <link>/work/nalys-copy/</link>
@@ -56,13 +56,6 @@
       <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
       <guid>/work/diamidex/</guid>
       <description>&lt;p&gt;Courte description d’intro (1–2 phrases).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>/contact/</link>
-      <pubDate>Sun, 10 Aug 2025 09:42:04 +0200</pubDate>
-      <guid>/contact/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
