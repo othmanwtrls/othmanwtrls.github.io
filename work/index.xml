@@ -6,7 +6,21 @@
     <description>Recent content in Work on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sun, 10 Aug 2025 22:34:09 +0200</lastBuildDate>
     <atom:link href="/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nalys</title>
+      <link>/work/nalys/</link>
+      <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
+      <guid>/work/nalys/</guid>
+      <description>&lt;p&gt;Courte description d’intro (1–2 phrases).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Diamidex</title>
+      <link>/work/diamidex/</link>
+      <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
+      <guid>/work/diamidex/</guid>
+      <description>&lt;p&gt;Courte description d’intro (1–2 phrases).&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
