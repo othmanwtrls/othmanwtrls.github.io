@@ -6,13 +6,20 @@
     <description>Recent content in Tech on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Aug 2025 22:34:09 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 09:27:40 +0200</lastBuildDate>
     <atom:link href="/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agile</title>
       <link>/tech/agile/</link>
-      <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
+      <pubDate>Wed, 20 Aug 2025 09:27:40 +0200</pubDate>
       <guid>/tech/agile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>/tech/python/</link>
+      <pubDate>Wed, 20 Aug 2025 09:27:40 +0200</pubDate>
+      <guid>/tech/python/</guid>
       <description></description>
     </item>
     <item>
@@ -20,13 +27,6 @@
       <link>/tech/je-sais-quoi/</link>
       <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
       <guid>/tech/je-sais-quoi/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>/tech/python/</link>
-      <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
-      <guid>/tech/python/</guid>
       <description></description>
     </item>
   </channel>
