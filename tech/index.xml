@@ -23,10 +23,17 @@
       <description></description>
     </item>
     <item>
-      <title>Je Sais Quoi</title>
-      <link>/tech/je-sais-quoi/</link>
+      <title>Je Ne</title>
+      <link>/tech/je-ne/</link>
       <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
-      <guid>/tech/je-sais-quoi/</guid>
+      <guid>/tech/je-ne/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>/tech/sql/</link>
+      <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
+      <guid>/tech/sql/</guid>
       <description></description>
     </item>
   </channel>
