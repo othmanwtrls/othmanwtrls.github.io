@@ -102,6 +102,8 @@ nav.w3-bar{ padding:.5rem 0; }
   text-align:left;
   padding:12px 14px;
 }
+/* Remove extra top margin so the dropdown starts right under the navbar */
+.mobile-menu.w3-container{ margin-top: 0; }
 
 /* Mobile menu theming and animation */
 .mobile-menu{
