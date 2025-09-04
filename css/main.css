@@ -39,6 +39,47 @@ main {
   align-items: center;       /* ✅ centre horizontalement */
 }
 
+/* ===== About page ===== */
+body.about main{
+  justify-content: flex-start; /* read from top */
+}
+.about-page{ max-width: 1000px; width:100%; padding-top: 2rem; }
+.about-hero{ margin-bottom: 1.25rem; }
+.about-avatar{
+  width: 88px; height:88px; border-radius:50%; object-fit:cover;
+  border:1px solid #2b2b2b; background:#1b1b1b; margin-bottom:.5rem;
+}
+.about-title{ font-size: 2rem; margin:.25rem 0 .25rem; }
+.about-subtitle{ margin-top: 0; }
+.about-section{ margin: 1rem 0; }
+.about-h2{
+  margin: .25rem 0 0.75rem;
+  padding-left:.75rem;
+  border-left: 3px solid #2196f3;
+}
+.about-h3{ margin-top:0; margin-bottom:.5rem; }
+.about-lead{ font-size:1.05em; line-height:1.6; }
+
+.about-grid{
+  display:grid; gap: 1rem;
+  grid-template-columns: 1fr; 
+}
+@media (min-width: 768px){
+  .about-grid{ grid-template-columns: 1fr 1fr; }
+}
+
+.about-card{
+  background:#1b1b1b;
+  border:1px solid #2b2b2b;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  transition: transform .12s ease, border-color .2s ease, box-shadow .2s ease;
+}
+/* hover disabled for about cards */
+.about-content ul{ margin-top:.5rem; }
+.about-content li{ margin:.25rem 0; }
+
 .social-icons a i {
   font-size: 2rem;
   color: #fafafa;
@@ -132,7 +173,12 @@ nav.w3-bar{ padding:.5rem 0; }
   .social-icons a i{ font-size:2.2rem; }
   .cta-row{ gap:.5rem; }
   .calendly-btn, .cv-link{ width:100%; justify-content:center; }
+  /* Improve line spacing for wrapped author name on home */
+  .home-title{ line-height: 1.0; }
 }
+
+/* Slightly larger breakpoint to ensure comfortable spacing on bigger phones */
+@media (max-width:640px){ .home-title{ line-height: 1.0; } }
 
 /* Hauteur d’écran mobile moderne */
 @supports (min-height: 100dvh){

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="images/serpent.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="/css/main.min.94db5a058e8a19671e4cad8adfada5e986968d1efcd1c16e9554fca6b807b34f.css" integrity="sha256-lNtaBY6KGWceTK2K362l6YaWjR780cFulVT8prgHs08=">
+</head>
+
+<script>
+  function toggleMenu(){
+    var panel = document.getElementById('mobileMenu');
+    var btn = document.getElementById('hamburgerBtn');
+    var isOpen = panel.classList.contains('is-open');
+
+    function open(){
+      panel.classList.remove('w3-hide');
+      
+      panel.style.height = '0px';
+      
+      void panel.offsetHeight;
+      var target = panel.scrollHeight;
+      panel.classList.add('is-open');
+      panel.style.height = target + 'px';
+      btn.setAttribute('aria-expanded','true');
+      var onEnd = function(e){
+        if (e.propertyName === 'height'){
+          panel.style.height = 'auto';
+          panel.removeEventListener('transitionend', onEnd);
+        }
+      };
+      panel.addEventListener('transitionend', onEnd);
+    }
+
+    function close(){
+      
+      var current = panel.scrollHeight;
+      panel.style.height = current + 'px';
+      
+      void panel.offsetHeight;
+      panel.style.height = '0px';
+      btn.setAttribute('aria-expanded','false');
+      var onEnd = function(e){
+        if (e.propertyName === 'height'){
+          panel.classList.remove('is-open');
+          if (!panel.classList.contains('w3-hide')) panel.classList.add('w3-hide');
+          panel.removeEventListener('transitionend', onEnd);
+        }
+      };
+      panel.addEventListener('transitionend', onEnd);
+    }
+
+    if (!isOpen) open(); else close();
+  }
+</script>
+
+<body class="about">
+
+  <nav class="w3-bar w3-container">
+  
+  <a href="/" class="w3-bar-item" style="text-decoration:none;">
+    OTHMAN WTRLS PORTFOLIO
+  </a>
+
+  
+  <button id="hamburgerBtn"
+          class="w3-bar-item w3-right w3-hide-medium w3-hide-large"
+          onclick="toggleMenu()"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  
+  <div class="w3-right w3-hide-small">
+    
+      
+        <a href="/about/" class="w3-bar-item" style="text-decoration:none;">
+          About
+        </a>
+      
+        <a href="/work/" class="w3-bar-item" style="text-decoration:none;">
+          Work
+        </a>
+      
+        <a href="/contact/" class="w3-bar-item" style="text-decoration:none;">
+          Contact
+        </a>
+      
+    
+  </div>
+</nav>
+
+
+<div id="mobileMenu" class="mobile-menu w3-hide w3-hide-medium w3-hide-large w3-container">
+  <div class="w3-bar-block w3-card">
+    
+      
+        <a href="/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          About
+        </a>
+      
+        <a href="/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Work
+        </a>
+      
+        <a href="/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Contact
+        </a>
+      
+    
+  </div>
+</div>
+
+
+  <main>
+    
+<article class="about-page w3-container">
+
+  
+  <section class="about-hero w3-center">
+    
+      <img src="/images/avatar.png" alt="Avatar" class="about-avatar" loading="lazy" />
+    
+    <h1 class="w3-text-light-grey about-title">About Me</h1>
+    
+  </section>
+
+  
+  
+
+  
+  <section class="about-section">
+    <div class="about-card">
+      
+        <div class="about-lead"><h1 id="-about-me">👨‍💻 About Me</h1>
+<p>Hello and welcome!</p>
+<p>I’m a <strong>Computer Engineer</strong> with a passion for teaching and knowledge sharing.<br>
+Over the years, I’ve helped students and professionals grow their skills in <strong>computer science, engineering, and academic subjects</strong>.<br>
+My goal is simple: make complex topics clear, practical, and accessible — whether you’re preparing for exams, starting a new project, or simply curious to learn.</p>
+<hr>
+</div>
+      
+    </div>
+  </section>
+
+  
+  
+    
+  
+    
+      
+      
+      
+      
+
+      <section class="about-section">
+        <h2 class="about-h2">🎯 What I Offereeed</h2>
+
+        
+        
+        
+          <div class="about-grid">
+            
+              
+            
+              
+                
+                
+                
+                <div class="about-card">
+                  <h3 class="about-h3">💻 Computer Science &amp; IT Coaching</h3>
+                  <div class="about-content"><ul>
+<li>Programming &amp; application: <strong>Python, C, C#, C++</strong></li>
+<li>Web development: <strong>HTML, CSS, Bootstrap, Hugo</strong></li>
+<li>Databases: <strong>SQL</strong></li>
+<li>Tools &amp; automation: <strong>Git, CI/CD, Make, Excel, VBA</strong></li>
+<li>Fundamentals: computer basics, algorithms, and project support</li>
+</ul>
+<p><em>Learn the essentials, strengthen your coding skills, or get guidance on your personal/academic projects.</em></p>
+<hr></div>
+                </div>
+              
+            
+              
+                
+                
+                
+                <div class="about-card">
+                  <h3 class="about-h3">📚 Tutoring for Middle &amp; High School</h3>
+                  <div class="about-content"><ul>
+<li><strong>Engineering Sciences</strong></li>
+<li><strong>Technology &amp; Computer Science</strong></li>
+<li><strong>Mathematics</strong></li>
+<li><strong>Physics &amp; Chemistry</strong></li>
+</ul>
+<p><em>Personalized lessons to build confidence, improve results, and make learning enjoyable.</em></p>
+<hr></div>
+                </div>
+              
+            
+          </div>
+        
+      </section>
+    
+  
+    
+      
+      
+      
+      
+
+      <section class="about-section">
+        <h2 class="about-h2">🧑‍🏫 My Teaching Approach</h2>
+
+        
+        
+        
+          
+          <div class="about-card about-content"><ul>
+<li>Clear and simple explanations</li>
+<li>Progressive exercises to foster autonomy</li>
+<li>Adaptation to your needs, level, and pace</li>
+<li>Friendly, structured, and supportive guidance</li>
+</ul>
+<p>I believe that <strong>everyone can succeed</strong> with the right method and encouragement.</p>
+<hr></div>
+        
+      </section>
+    
+  
+    
+      
+      
+      
+      
+
+      <section class="about-section">
+        <h2 class="about-h2">📍 Availability</h2>
+
+        
+        
+        
+          
+          <div class="about-card about-content"><ul>
+<li><strong>Online lessons</strong> (anywhere 🌍)</li>
+<li><strong>In-person sessions</strong> (depending on location)</li>
+</ul>
+<hr>
+<p>✨ Curious to know more or work together?<br>
+Feel free to explore my site and get in touch — I’d be happy to hear from you!</p></div>
+        
+      </section>
+    
+  
+
+  
+  <section class="about-section w3-center">
+    <div class="cta-row">
+      <a class="cv-link" href="/contact/">
+        <i class="fa-regular fa-envelope"></i>
+        Contact me
+      </a>
+    </div>
+  </section>
+
+</article>
+
+  </main>
+
+  <footer class="footer">
+  <section class="container">
+    © 
+    
+      2024–2025
+    
+    Othman WAETERLOOS. All rights reserved.
+  </section>
+</footer>
+
+
+</body>
+</html>
