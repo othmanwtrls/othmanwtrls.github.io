@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Organization on Othman Wtrls Portfolio</title>
+    <link>//localhost:1313/tech/event-organization/</link>
+    <description>Recent content in Event Organization on Othman Wtrls Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tech/event-organization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sports Animator — Combes d&#39;Abondance</title>
+      <link>//localhost:1313/work/sports-animator-combes/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>//localhost:1313/work/sports-animator-combes/</guid>
+      <description>&lt;p&gt;Sports animator in a summer camp (Combes d&amp;rsquo;Abondance, France) with teenagers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

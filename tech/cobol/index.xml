@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COBOL on Othman Wtrls Portfolio</title>
+    <link>//localhost:1313/tech/cobol/</link>
+    <description>Recent content in COBOL on Othman Wtrls Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Aug 2025 09:27:40 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tech/cobol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sopra Steria</title>
+      <link>//localhost:1313/work/soprasteria/</link>
+      <pubDate>Wed, 20 Aug 2025 09:27:40 +0200</pubDate>
+      <guid>//localhost:1313/work/soprasteria/</guid>
+      <description>&lt;p&gt;Software engineer at Sopra Steria (Valencia, Spain), working on banking software and application maintenance.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

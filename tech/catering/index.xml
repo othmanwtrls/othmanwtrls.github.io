@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catering on Othman Wtrls Portfolio</title>
+    <link>//localhost:1313/tech/catering/</link>
+    <description>Recent content in Catering on Othman Wtrls Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tech/catering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cook — Canada</title>
+      <link>//localhost:1313/work/cook-canada/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>//localhost:1313/work/cook-canada/</guid>
+      <description>&lt;p&gt;Cook at Fjord in Chicoutimi (Quebec, Canada).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

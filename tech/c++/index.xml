@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Othman Wtrls Portfolio</title>
+    <link>//localhost:1313/tech/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Othman Wtrls Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Aug 2025 22:34:09 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tech/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nalys</title>
+      <link>//localhost:1313/work/nalys/</link>
+      <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
+      <guid>//localhost:1313/work/nalys/</guid>
+      <description>&lt;p&gt;Consulting engineer at Nalys (Brussels, Belgium) across DevOps, embedded systems and software topics.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

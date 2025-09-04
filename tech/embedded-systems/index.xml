@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedded Systems on Othman Wtrls Portfolio</title>
+    <link>//localhost:1313/tech/embedded-systems/</link>
+    <description>Recent content in Embedded Systems on Othman Wtrls Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/tech/embedded-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynapac</title>
+      <link>//localhost:1313/work/dynapac/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>//localhost:1313/work/dynapac/</guid>
+      <description>&lt;p&gt;Software engineer in Karlskrona (Sweden), working on software interacting with machines.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

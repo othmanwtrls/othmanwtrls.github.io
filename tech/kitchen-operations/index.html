@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title>Kitchen Operations</title>
+  <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="images/serpent.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.css" >
+</head>
+
+<script>
+  function toggleMenu(){
+    var panel = document.getElementById('mobileMenu');
+    var btn = document.getElementById('hamburgerBtn');
+    var isOpen = panel.classList.contains('is-open');
+
+    function open(){
+      panel.classList.remove('w3-hide');
+      
+      panel.style.height = '0px';
+      
+      void panel.offsetHeight;
+      var target = panel.scrollHeight;
+      panel.classList.add('is-open');
+      panel.style.height = target + 'px';
+      btn.setAttribute('aria-expanded','true');
+      var onEnd = function(e){
+        if (e.propertyName === 'height'){
+          panel.style.height = 'auto';
+          panel.removeEventListener('transitionend', onEnd);
+        }
+      };
+      panel.addEventListener('transitionend', onEnd);
+    }
+
+    function close(){
+      
+      var current = panel.scrollHeight;
+      panel.style.height = current + 'px';
+      
+      void panel.offsetHeight;
+      panel.style.height = '0px';
+      btn.setAttribute('aria-expanded','false');
+      var onEnd = function(e){
+        if (e.propertyName === 'height'){
+          panel.classList.remove('is-open');
+          if (!panel.classList.contains('w3-hide')) panel.classList.add('w3-hide');
+          panel.removeEventListener('transitionend', onEnd);
+        }
+      };
+      panel.addEventListener('transitionend', onEnd);
+    }
+
+    if (!isOpen) open(); else close();
+  }
+</script>
+
+<body class="tech">
+
+  <nav class="w3-bar w3-container">
+  
+  <a href="/" class="w3-bar-item" style="text-decoration:none;">
+    OTHMAN WTRLS PORTFOLIO
+  </a>
+
+  
+  <button id="hamburgerBtn"
+          class="w3-bar-item w3-right w3-hide-medium w3-hide-large"
+          onclick="toggleMenu()"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  
+  <div class="w3-right w3-hide-small">
+    
+      
+        <a href="/about/" class="w3-bar-item" style="text-decoration:none;">
+          About
+        </a>
+      
+        <a href="/work/" class="w3-bar-item" style="text-decoration:none;">
+          Work
+        </a>
+      
+        <a href="/contact/" class="w3-bar-item" style="text-decoration:none;">
+          Contact
+        </a>
+      
+    
+  </div>
+</nav>
+
+
+<div id="mobileMenu" class="mobile-menu w3-hide w3-hide-medium w3-hide-large w3-container">
+  <div class="w3-bar-block w3-card">
+    
+      
+        <a href="/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          About
+        </a>
+      
+        <a href="/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Work
+        </a>
+      
+        <a href="/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Contact
+        </a>
+      
+    
+  </div>
+</div>
+
+
+  <main>
+    
+<div class="w3-container">
+  <h1 class="w3-xxlarge" style="margin-top:.5rem;">Kitchen Operations</h1>
+  <div class="w3-row-padding">
+    
+      <div class="w3-col l6 m12">
+        <a class="work-card w3-display-container" href="/work/cook-canada/">
+          <div class="w3-padding">
+            <h3 class="w3-large w3-margin-top w3-margin-bottom">Cook — Canada</h3>
+            <p class="w3-small w3-opacity">Cook at Fjord in Chicoutimi (Quebec, Canada).
+</p>
+          </div>
+          <span class="w3-display-right w3-margin-right w3-opacity-min">›</span>
+        </a>
+      </div>
+    
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <section class="container">
+    © 
+    
+      2024–2025
+    
+    Othman WAETERLOOS. All rights reserved.
+  </section>
+</footer>
+
+
+</body>
+</html>
