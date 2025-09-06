@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevOps on Othman Wtrls Portfolio</title>
-    <link>//localhost:1313/tech/devops/</link>
+    <link>/tech/devops/</link>
     <description>Recent content in DevOps on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tech/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Aug 2025 22:23:45 +0200</lastBuildDate>
+    <atom:link href="/tech/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Afelio</title>
-      <link>//localhost:1313/work/afelio/</link>
-      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>//localhost:1313/work/afelio/</guid>
-      <description>&lt;p&gt;Consulting engineer assignment at Afelio (Liège, Belgium) for a client mission covering DevOps and software topics.&lt;/p&gt;</description>
+      <title>Software &amp; DevOps Engineer – Diamidex</title>
+      <link>/work/diamidex/</link>
+      <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
+      <guid>/work/diamidex/</guid>
+      <description>From UI to CI/CD: DevOps engineer shaping Diamidex’s MICA solution</description>
     </item>
   </channel>
 </rss>

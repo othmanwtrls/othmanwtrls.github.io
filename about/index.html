@@ -13,7 +13,7 @@
   
     
   
-  <link rel="stylesheet" href="/css/main.min.94db5a058e8a19671e4cad8adfada5e986968d1efcd1c16e9554fca6b807b34f.css" integrity="sha256-lNtaBY6KGWceTK2K362l6YaWjR780cFulVT8prgHs08=">
+  <link rel="stylesheet" href="/css/main.min.b89ab0a684414aa9767b776542a18cad51d16e331f99567eff26f3915ecd2c9c.css" integrity="sha256-uJqwpoRBSql2e3dlQqGMrVHRbjMfmVZ&#43;/ybzkV7NLJw=">
 </head>
 
 <script>
@@ -65,7 +65,8 @@
 
 <body class="about">
 
-  <nav class="w3-bar w3-container">
+  <header class="site-header">
+<nav class="w3-bar w3-container">
   
   <a href="/" class="w3-bar-item" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
@@ -121,6 +122,7 @@
     
   </div>
 </div>
+</header>
 
 
   <main>
@@ -316,6 +318,28 @@ Feel free to explore my site and get in touch — I’d be happy to hear from yo
   </section>
 </footer>
 
+
+  
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script>
+    (function(){
+      var btn = document.getElementById('backToTop');
+      if(!btn) return;
+      var toggle = function(){
+        if (window.scrollY > 200) btn.classList.add('is-visible');
+        else btn.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', toggle, { passive: true });
+      document.addEventListener('DOMContentLoaded', toggle);
+      btn.addEventListener('click', function(){
+        var prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    })();
+  </script>
 
 </body>
 </html>
