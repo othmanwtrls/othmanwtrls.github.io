@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>Ingénieur</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
@@ -11,9 +11,7 @@
   
   
   
-    
-  
-  <link rel="stylesheet" href="/css/main.min.94db5a058e8a19671e4cad8adfada5e986968d1efcd1c16e9554fca6b807b34f.css" integrity="sha256-lNtaBY6KGWceTK2K362l6YaWjR780cFulVT8prgHs08=">
+  <link rel="stylesheet" href="/css/main.css" >
 </head>
 
 <script>
@@ -65,7 +63,8 @@
 
 <body class="roles">
 
-  <nav class="w3-bar w3-container">
+  <header class="site-header">
+<nav class="w3-bar w3-container">
   
   <a href="/" class="w3-bar-item" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
@@ -121,6 +120,7 @@
     
   </div>
 </div>
+</header>
 
 
   <main>
@@ -130,21 +130,10 @@
   <div class="w3-row-padding">
     
       <div class="w3-col l6 m12">
-        <a class="work-card w3-display-container" href="/work/soprasteria/">
+        <a class="work-card w3-display-container" href="/work/tempo/">
           <div class="w3-padding">
-            <h3 class="w3-large w3-margin-top w3-margin-bottom">Sopra Steria</h3>
+            <h3 class="w3-large w3-margin-top w3-margin-bottom">Tempo</h3>
             <p class="w3-small w3-opacity">Courte description d’intro (1–2 phrases).
-</p>
-          </div>
-          <span class="w3-display-right w3-margin-right w3-opacity-min">›</span>
-        </a>
-      </div>
-    
-      <div class="w3-col l6 m12">
-        <a class="work-card w3-display-container" href="/work/diamidex/">
-          <div class="w3-padding">
-            <h3 class="w3-large w3-margin-top w3-margin-bottom">Diamidex</h3>
-            <p class="w3-small w3-opacity">Mission d&rsquo;ingénieur Python au sein de Diamidex pendant 12 mois, centrée sur le développement de services backend, l&rsquo;automatisation des flux de données et l&rsquo;amélioration continue des processus internes.
 </p>
           </div>
           <span class="w3-display-right w3-margin-right w3-opacity-min">›</span>
@@ -166,6 +155,28 @@
   </section>
 </footer>
 
+
+  
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script>
+    (function(){
+      var btn = document.getElementById('backToTop');
+      if(!btn) return;
+      var toggle = function(){
+        if (window.scrollY > 200) btn.classList.add('is-visible');
+        else btn.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', toggle, { passive: true });
+      document.addEventListener('DOMContentLoaded', toggle);
+      btn.addEventListener('click', function(){
+        var prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    })();
+  </script>
 
 </body>
 </html>

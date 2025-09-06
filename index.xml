@@ -6,8 +6,15 @@
     <description>Recent content on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software &amp; DevOps Engineer - Nalys</title>
+      <link>/work/nalys/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/work/nalys/</guid>
+      <description>DevOps &amp;amp; embedded systems consultant supporting software integration projects</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>/about/</link>
@@ -16,7 +23,7 @@
       <description>&lt;h1 id=&#34;-about-me&#34;&gt;👨‍💻 About Me&lt;/h1&gt;&#xA;&lt;p&gt;Hello and welcome!&lt;/p&gt;&#xA;&lt;p&gt;I’m a &lt;strong&gt;Computer Engineer&lt;/strong&gt; with a passion for teaching and knowledge sharing.&lt;br&gt;&#xA;Over the years, I’ve worked on diverse &lt;strong&gt;projects&lt;/strong&gt; while also helping students and professionals strengthen their skills in &lt;strong&gt;computer science, engineering, and academic subjects&lt;/strong&gt;.&#xA;My goal is simple: make complex topics clear, practical, and accessible — whether you’re preparing for exams, starting a new project, or simply curious to learn.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-what-i-offer&#34;&gt;🎯 What I Offer&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-computer-science--it-coaching&#34;&gt;💻 Computer Science &amp;amp; IT Coaching&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Programming &amp;amp; application: &lt;strong&gt;Python, C, C#, C++&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Web development: &lt;strong&gt;HTML, CSS, Bootstrap, Hugo&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Databases: &lt;strong&gt;SQL&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Tools &amp;amp; automation: &lt;strong&gt;Git, CI/CD, Make, Excel, VBA&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Fundamentals: computer basics, algorithms, and project support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Learn the essentials, strengthen your coding skills, or get guidance on your personal/academic projects.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Software &amp; DevOps Engineer – Diamidex</title>
+      <title>Software &amp; DevOps Engineer - Diamidex</title>
       <link>/work/diamidex/</link>
       <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
       <guid>/work/diamidex/</guid>

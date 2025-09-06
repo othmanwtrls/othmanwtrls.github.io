@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Je Ne on Othman Wtrls Portfolio</title>
-    <link>/tech/je-ne/</link>
+    <link>//localhost:1313/tech/je-ne/</link>
     <description>Recent content in Je Ne on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Aug 2025 22:34:09 +0200</lastBuildDate>
-    <atom:link href="/tech/je-ne/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tech/je-ne/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nalys</title>
-      <link>/work/nalys/</link>
+      <link>//localhost:1313/work/nalys/</link>
       <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
-      <guid>/work/nalys/</guid>
+      <guid>//localhost:1313/work/nalys/</guid>
       <description>&lt;p&gt;Courte description d’intro (1–2 phrases).&lt;/p&gt;</description>
     </item>
   </channel>

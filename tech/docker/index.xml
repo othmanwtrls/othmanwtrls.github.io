@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Othman Wtrls Portfolio</title>
-    <link>//localhost:1313/tech/docker/</link>
+    <link>/tech/docker/</link>
     <description>Recent content in Docker on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Aug 2025 22:34:09 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tech/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tech/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Nalys</title>
-      <link>//localhost:1313/work/nalys/</link>
-      <pubDate>Sun, 10 Aug 2025 22:34:09 +0200</pubDate>
-      <guid>//localhost:1313/work/nalys/</guid>
-      <description>&lt;p&gt;Consulting engineer at Nalys (Brussels, Belgium) across DevOps, embedded systems and software topics.&lt;/p&gt;</description>
+      <title>Software &amp; DevOps Engineer - Nalys</title>
+      <link>/work/nalys/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/work/nalys/</guid>
+      <description>DevOps &amp;amp; embedded systems consultant supporting software integration projects</description>
     </item>
   </channel>
 </rss>

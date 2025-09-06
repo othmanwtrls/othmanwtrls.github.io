@@ -2,40 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tech/agile/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/c/c&#43;&#43;/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/devops/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/roles/devops-engineer/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/docker/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/python/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/roles/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/work/nalys/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/work/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2025-09-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/work/</loc>
-    <lastmod>2025-08-20T09:27:40+02:00</lastmod>
-  </url><url>
-    <loc>/tech/agile/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
-    <loc>/tech/devops/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
-    <loc>/roles/devops-engineer/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
-    <loc>/tech/python/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
     <loc>/tech/qt6/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
-    <loc>/roles/</loc>
     <lastmod>2025-08-10T22:23:45+02:00</lastmod>
   </url><url>
     <loc>/work/diamidex/</loc>
     <lastmod>2025-08-10T22:23:45+02:00</lastmod>
   </url><url>
     <loc>/tech/sql/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
-    <loc>/tech/</loc>
     <lastmod>2025-08-10T22:23:45+02:00</lastmod>
   </url><url>
     <loc>/contact/</loc>
