@@ -2,59 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tech/agile/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/banking-software/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/cobol/java-like/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/work/afelio/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/database/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/python/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/roles/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/sav/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/roles/software-developer/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/work/sopra/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/roles/software-engineer/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/work/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/c/c&#43;&#43;/</loc>
-    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/devops/</loc>
-    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/roles/devops-engineer/</loc>
-    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/docker/</loc>
-    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/work/nalys/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
@@ -62,23 +20,11 @@
     <loc>/about/</loc>
     <lastmod>2025-09-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/qt6/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
     <loc>/work/diamidex/</loc>
-    <lastmod>2025-08-10T22:23:45+02:00</lastmod>
-  </url><url>
-    <loc>/tech/sql/</loc>
     <lastmod>2025-08-10T22:23:45+02:00</lastmod>
   </url><url>
     <loc>/contact/</loc>
     <lastmod>2025-08-10T09:42:04+02:00</lastmod>
-  </url><url>
-    <loc>/tech/c%23/</loc>
-    <lastmod>2022-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tech/can-bus/</loc>
-    <lastmod>2022-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/work/dynapac/</loc>
     <lastmod>2022-09-07T00:00:00+00:00</lastmod>
