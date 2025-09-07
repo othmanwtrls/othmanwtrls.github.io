@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
   <title>Software Engineer</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
@@ -11,7 +11,9 @@
   
   
   
-  <link rel="stylesheet" href="/css/main.css" >
+    
+  
+  <link rel="stylesheet" href="/css/main.min.b89ab0a684414aa9767b776542a18cad51d16e331f99567eff26f3915ecd2c9c.css" integrity="sha256-uJqwpoRBSql2e3dlQqGMrVHRbjMfmVZ&#43;/ybzkV7NLJw=">
 </head>
 
 <script>
@@ -63,7 +65,8 @@
 
 <body class="roles">
 
-  <nav class="w3-bar w3-container">
+  <header class="site-header">
+<nav class="w3-bar w3-container">
   
   <a href="/" class="w3-bar-item" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
@@ -119,6 +122,7 @@
     
   </div>
 </div>
+</header>
 
 
   <main>
@@ -128,11 +132,20 @@
   <div class="w3-row-padding">
     
       <div class="w3-col l6 m12">
-        <a class="work-card w3-display-container" href="/work/diamidex/">
+        <a class="work-card w3-display-container" href="/work/afelio/">
           <div class="w3-padding">
-            <h3 class="w3-large w3-margin-top w3-margin-bottom">Software &amp; DevOps Engineer – Diamidex</h3>
-            <p class="w3-small w3-opacity">Software &amp; DevOps Engineer – Diamidex January 2024 – Present | CDI | Luminy, Marseille (France)
-</p>
+            <h3 class="w3-large w3-margin-top w3-margin-bottom">Consulting Engineer – Afelio (via Nalys)</h3>
+            <p class="w3-small w3-opacity">Consulting engineer developing Python packages for FN Herstal using Agile methods</p>
+          </div>
+          <span class="w3-display-right w3-margin-right w3-opacity-min">›</span>
+        </a>
+      </div>
+    
+      <div class="w3-col l6 m12">
+        <a class="work-card w3-display-container" href="/work/dynapac/">
+          <div class="w3-padding">
+            <h3 class="w3-large w3-margin-top w3-margin-bottom">Software Engineer – Dynapac</h3>
+            <p class="w3-small w3-opacity">Developed machine-control applications in Python and C# for construction equipment</p>
           </div>
           <span class="w3-display-right w3-margin-right w3-opacity-min">›</span>
         </a>
@@ -153,6 +166,28 @@
   </section>
 </footer>
 
+
+  
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script>
+    (function(){
+      var btn = document.getElementById('backToTop');
+      if(!btn) return;
+      var toggle = function(){
+        if (window.scrollY > 200) btn.classList.add('is-visible');
+        else btn.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', toggle, { passive: true });
+      document.addEventListener('DOMContentLoaded', toggle);
+      btn.addEventListener('click', function(){
+        var prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    })();
+  </script>
 
 </body>
 </html>

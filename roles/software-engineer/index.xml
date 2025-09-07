@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Engineer on Othman Wtrls Portfolio</title>
-    <link>//localhost:1313/roles/software-engineer/</link>
+    <link>/roles/software-engineer/</link>
     <description>Recent content in Software Engineer on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Aug 2025 22:23:45 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/roles/software-engineer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/roles/software-engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Software &amp; DevOps Engineer – Diamidex</title>
-      <link>//localhost:1313/work/diamidex/</link>
-      <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
-      <guid>//localhost:1313/work/diamidex/</guid>
-      <description>&lt;h1 id=&#34;software--devops-engineer--diamidex&#34;&gt;Software &amp;amp; DevOps Engineer – Diamidex&lt;/h1&gt;&#xA;&lt;p&gt;January 2024 – Present | CDI | Luminy, Marseille (France)&lt;/p&gt;</description>
+      <title>Consulting Engineer – Afelio (via Nalys)</title>
+      <link>/work/afelio/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/work/afelio/</guid>
+      <description>Consulting engineer developing Python packages for FN Herstal using Agile methods</description>
+    </item>
+    <item>
+      <title>Software Engineer – Dynapac</title>
+      <link>/work/dynapac/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>/work/dynapac/</guid>
+      <description>Developed machine-control applications in Python and C# for construction equipment</description>
     </item>
   </channel>
 </rss>

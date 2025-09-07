@@ -63,7 +63,8 @@
 
 <body class="roles">
 
-  <nav class="w3-bar w3-container">
+  <header class="site-header">
+<nav class="w3-bar w3-container">
   
   <a href="/" class="w3-bar-item" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
@@ -119,6 +120,7 @@
     
   </div>
 </div>
+</header>
 
 
   <main>
@@ -130,8 +132,8 @@
       <div class="w3-col l6 m12">
         <a class="work-card w3-display-container" href="/work/afelio/">
           <div class="w3-padding">
-            <h3 class="w3-large w3-margin-top w3-margin-bottom">Afelio</h3>
-            <p class="w3-small w3-opacity">Consulting engineer assignment at Afelio (Liège, Belgium) for a client mission covering DevOps and software topics.
+            <h3 class="w3-large w3-margin-top w3-margin-bottom">Consulting Engineer – Afelio (via Nalys)</h3>
+            <p class="w3-small w3-opacity">Consulting Engineer – Afelio (via Nalys) September 2022 – August 2023 | Brussels, Belgium
 </p>
           </div>
           <span class="w3-display-right w3-margin-right w3-opacity-min">›</span>
@@ -153,6 +155,28 @@
   </section>
 </footer>
 
+
+  
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script>
+    (function(){
+      var btn = document.getElementById('backToTop');
+      if(!btn) return;
+      var toggle = function(){
+        if (window.scrollY > 200) btn.classList.add('is-visible');
+        else btn.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', toggle, { passive: true });
+      document.addEventListener('DOMContentLoaded', toggle);
+      btn.addEventListener('click', function(){
+        var prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    })();
+  </script>
 
 </body>
 </html>

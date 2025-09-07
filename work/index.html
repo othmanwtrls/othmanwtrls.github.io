@@ -137,6 +137,10 @@
   
     
   
+    
+  
+    
+  
   
   
   
@@ -157,7 +161,21 @@
       
     
   
+    
+      
+      
+      
+    
   
+    
+      
+      
+      
+    
+  
+  
+  
+    
   
     
   
@@ -196,6 +214,32 @@
         
         
       
+    
+  
+    
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    
+  
+    
+      
+        
+        
+      
         
         
       
@@ -220,15 +264,21 @@
   
     
   
+    
+  
+    
+  
+    
+  
   
 
   
   
-  <link rel="stylesheet" href="/css/work.min.e4983ba9daf5e7ec0c1b0b14d86780af134164bb009d78c61ab861d87baa17b8.css" integrity="sha256-5Jg7qdr15&#43;wMGwsU2GeArxNBZLsAnXjGGrhh2HuqF7g=">
+  <link rel="stylesheet" href="/css/work.min.76c7674652304d08c33338bf004452e6a634546df7876d41131ccab575fff903.css" integrity="sha256-dsdnRlIwTQjDMzi/AERS5qY0VG33h21BExzKtXX/&#43;QM=">
 
   
   
-  <script defer src="/js/work.min.85a16daeecb616f929d78f21b6000b4892c79b092153d5226064f1501d891d10.js" integrity="sha256-haFtruy2Fvkp148htgALSJLHmwkhU9UiYGTxUB2JHRA="></script>
+  <script defer src="/js/work.min.89bc1ba6e2830869e312364e210a6f90f52f82baf8ee0c14beaa24e21b52bc48.js" integrity="sha256-ibwbpuKDCGnjEjZOIQpvkPUvgrr47gwUvqok4htSvEg="></script>
 
   <header class="w3-margin-bottom">
     <h1 class="w3-xxlarge w3-margin-0">Work</h1>
@@ -256,19 +306,24 @@
       
       <div class="w3-section">
         <label class="w3-medium">Filter by role</label>
-        <div class="w3-dropdown-click">
-          <button id="roleBtn" class="w3-button w3-grey role-dropdown-btn">
+        <div class="role-dropdown">
+          <button id="roleBtn" class="role-button">
             <span id="roleLabel">All roles</span>
             <span aria-hidden="true">▾</span>
           </button>
-          <div id="roleMenu" class="w3-dropdown-content w3-bar-block w3-border role-dropdown-menu">
-            <a href="#" class="w3-bar-item w3-button" data-value="">
+          <div id="roleMenu" class="role-menu">
+            <a href="#" class="role-menu-item" data-value="">
               <span>All roles</span>
-              <span class="role-count">2</span>
+              <span class="role-count">4</span>
             </a>
             
-              <a href="#" class="w3-bar-item w3-button" data-value="DevOps Engineer">
+              <a href="#" class="role-menu-item" data-value="DevOps Engineer">
                 <span>DevOps Engineer</span>
+                <span class="role-count">2</span>
+              </a>
+            
+              <a href="#" class="role-menu-item" data-value="Software Engineer">
+                <span>Software Engineer</span>
                 <span class="role-count">2</span>
               </a>
             
@@ -285,9 +340,15 @@
           
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
+                <input type="checkbox" value="Python" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">Python</span>
+                <span class="tech-count">4</span>
+              </label>
+            
+              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
                 <input type="checkbox" value="Agile" class="w3-check">
                 <span class="tag w3-tag w3-round w3-small">Agile</span>
-                <span class="tech-count">2</span>
+                <span class="tech-count">3</span>
               </label>
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
@@ -297,14 +358,26 @@
               </label>
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
-                <input type="checkbox" value="Python" class="w3-check">
-                <span class="tag w3-tag w3-round w3-small">Python</span>
-                <span class="tech-count">2</span>
+                <input type="checkbox" value="C#" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">C#</span>
+                <span class="tech-count">1</span>
               </label>
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
                 <input type="checkbox" value="C/C&#43;&#43;" class="w3-check">
                 <span class="tag w3-tag w3-round w3-small">C/C&#43;&#43;</span>
+                <span class="tech-count">1</span>
+              </label>
+            
+              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
+                <input type="checkbox" value="CAN bus" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">CAN bus</span>
+                <span class="tech-count">1</span>
+              </label>
+            
+              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
+                <input type="checkbox" value="DataBase" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">DataBase</span>
                 <span class="tech-count">1</span>
               </label>
             
@@ -416,6 +489,84 @@
       
       
       
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Software Engineer" data-tech="Python,Agile,DataBase">
+        <a href="/work/afelio/" class="work-card w3-card-4 w3-display-container">
+          
+          <div class="w3-container w3-padding" style="margin-bottom:30px">
+            <h3 class="w3-margin-bottom" style="margin-top:0">Consulting Engineer – Afelio (via Nalys)</h3>
+
+            
+            
+            
+
+            <div class="w3-small w3-text-light-grey w3-row meta-row">
+              <div class="w3-col s7 m7 l7">
+                <span>📅
+                  2023 -
+                  2023
+                  (
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  7 mois
+
+)
+                </span>
+              </div>
+              <div class="w3-col s5 m5 l5 w3-right-align">
+                
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Software Engineer</span>
+                
+              </div>
+              <div class="w3-col s6 m6 l6">
+                
+                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Liège, Belgium</span>
+                
+              </div>
+            </div>
+
+            <p class="w3-opacity summary-text">
+              Consulting engineer developing Python packages for FN Herstal using Agile methods
+            </p>
+          </div>
+
+          
+          <div class="w3-display-bottommiddle w3-block w3-container w3-small">
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Python</span>
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Agile</span>
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">DataBase</span>
+            
+          </div>
+          
+        </a>
+      </div>
+
+    
+      
+      
+      
       <div class="w3-col l6 m12 s12 work-card-col" data-role="DevOps Engineer" data-tech="DevOps,Python,C/C&#43;&#43;,Agile,Docker">
         <a href="/work/nalys/" class="work-card w3-card-4 w3-display-container">
           
@@ -488,6 +639,84 @@
               <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Agile</span>
             
               <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Docker</span>
+            
+          </div>
+          
+        </a>
+      </div>
+
+    
+      
+      
+      
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Software Engineer" data-tech="Python,C#,CAN bus">
+        <a href="/work/dynapac/" class="work-card w3-card-4 w3-display-container">
+          
+          <div class="w3-container w3-padding" style="margin-bottom:30px">
+            <h3 class="w3-margin-bottom" style="margin-top:0">Software Engineer – Dynapac</h3>
+
+            
+            
+            
+
+            <div class="w3-small w3-text-light-grey w3-row meta-row">
+              <div class="w3-col s7 m7 l7">
+                <span>📅
+                  2021 -
+                  2022
+                  (
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  10 mois
+
+)
+                </span>
+              </div>
+              <div class="w3-col s5 m5 l5 w3-right-align">
+                
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Software Engineer</span>
+                
+              </div>
+              <div class="w3-col s6 m6 l6">
+                
+                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Karlskrona, Sweden</span>
+                
+              </div>
+            </div>
+
+            <p class="w3-opacity summary-text">
+              Developed machine-control applications in Python and C# for construction equipment
+            </p>
+          </div>
+
+          
+          <div class="w3-display-bottommiddle w3-block w3-container w3-small">
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Python</span>
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">C#</span>
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">CAN bus</span>
             
           </div>
           

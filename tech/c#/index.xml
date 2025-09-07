@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C# on Othman Wtrls Portfolio</title>
-    <link>//localhost:1313/tech/c%23/</link>
+    <link>/tech/c%23/</link>
     <description>Recent content in C# on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tech/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tech/c%23/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dynapac</title>
-      <link>//localhost:1313/work/dynapac/</link>
-      <pubDate>Thu, 04 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>//localhost:1313/work/dynapac/</guid>
-      <description>&lt;p&gt;Software engineer in Karlskrona (Sweden), working on software interacting with machines.&lt;/p&gt;</description>
+      <title>Software Engineer – Dynapac</title>
+      <link>/work/dynapac/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>/work/dynapac/</guid>
+      <description>Developed machine-control applications in Python and C# for construction equipment</description>
     </item>
   </channel>
 </rss>
