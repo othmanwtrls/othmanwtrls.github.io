@@ -171,6 +171,21 @@ main{ padding-top: 72px; }
 .mobile-menu .w3-button + .w3-button{ border-top:1px solid #2b2b2b; }
 .mobile-menu .w3-button:hover{ background:#2196f3; color:#fff; }
 
+/* Contact page links */
+.contact-info .contact-link{
+  color: #fafafa;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+}
+.contact-info .contact-link:hover{ border-bottom-color: currentColor; }
+
+/* Light theme: home buttons and contact links visible */
+[data-theme="light"] .calendly-btn,
+[data-theme="light"] .cv-link{
+  border-color:#111; color:#111; background: transparent;
+}
+[data-theme="light"] .contact-info .contact-link{ color:#111; }
+
 /* Theme toggle button */
 .theme-toggle{
   width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center;
