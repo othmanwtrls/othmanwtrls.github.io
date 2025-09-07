@@ -125,7 +125,7 @@ body.about main{
 nav.w3-bar{ padding:.5rem 0; }
 
 /* Fixed site header */
-.site-header{ position: fixed; top:0; left:0; right:0; z-index: 1000; background:#2c2c2c; border-bottom:1px solid #3a3a3a; }
+.site-header{ position: fixed; top:0; left:0; right:0; z-index: 6000; background:#2c2c2c; border-bottom:1px solid #3a3a3a; }
 .site-header .w3-container{ margin: 0 auto; }
 /* Offset main content to stay clear of fixed header */
 main{ padding-top: 72px; }
@@ -171,6 +171,24 @@ main{ padding-top: 72px; }
 .mobile-menu .w3-button + .w3-button{ border-top:1px solid #2b2b2b; }
 .mobile-menu .w3-button:hover{ background:#2196f3; color:#fff; }
 
+/* Theme toggle button */
+.theme-toggle{
+  width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid #2b2b2b; border-radius:8px; background:#1b1b1b; color:#fafafa; cursor:pointer;
+}
+.theme-toggle:hover{ background:#2a2a2a; border-color:#3a3a3a; }
+/* Ensure tight, centered icon */
+.theme-toggle i{ font-size:18px; line-height:1; display:block; }
+/* When used as a .w3-bar-item on mobile, remove extra padding */
+.w3-bar .theme-toggle{ padding:0 !important; margin:0; display:flex; align-items:center; justify-content:center; }
+
+/* Mobile fine-tuning: square, centered buttons in the navbar */
+@media (max-width:640px){
+  #hamburgerBtn{ width:40px; height:40px; }
+  .w3-bar .theme-toggle{ width:40px; height:40px; }
+  #hamburgerBtn i{ font-size:18px; line-height:1; display:block; }
+}
+
 /* Simple dark scrollbars */
 :root{
   --scrollbar-bg: #1b1b1b;
@@ -200,6 +218,33 @@ html{ scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg); }
 .back-to-top i{ font-size: 14px; line-height: 1; }
 .back-to-top.is-visible{ opacity: 1; visibility: visible; transform: translateY(0); }
 
+/* Smooth theme transitions (respect reduced motion) */
+@media (prefers-reduced-motion: no-preference){
+  html, body, .site-header, .work-card, .about-card, .filters-panel, .role-button, .role-menu, .work-hero, .back-to-top {
+    transition: background-color .5s ease, color .5s ease, border-color .5s ease;
+  }
+}
+
+/* Light theme overrides */
+[data-theme="light"] body{ background-color:#f6f7fb; color:#111; }
+[data-theme="light"] .site-header{ background:#ffffff; border-bottom:1px solid #e5e7eb; }
+[data-theme="light"] nav.w3-bar a{ color:#111; }
+[data-theme="light"] .mobile-menu .w3-button{ color:#111; }
+[data-theme="light"] #hamburgerBtn{ color:#111; }
+[data-theme="light"] .w3-button{ color:#111; }
+[data-theme="light"] .w3-text-light-grey{ color:#666 !important; }
+[data-theme="light"] .tag{ color:#111; }
+[data-theme="light"] .social-icons a i{ color:#111; }
+[data-theme="light"] .work-card,
+[data-theme="light"] .about-card,
+[data-theme="light"] .filters-panel,
+[data-theme="light"] .mobile-menu .w3-bar-block,
+[data-theme="light"] .work-hero{ background:#ffffff; border-color:#e5e7eb; color:#111; }
+[data-theme="light"] .mobile-menu .w3-bar-block{ background:#ffffff; }
+[data-theme="light"] .theme-toggle{ background:#ffffff; border-color:#e5e7eb; color:#111; }
+[data-theme="light"] .back-to-top{ background:#ffffff; border-color:#e5e7eb; color:#111; }
+[data-theme="light"] .btn-reset{ border-color:#111; color:#111; }
+
 /* Lisibilité & respiration en petit écran */
 @media (max-width:480px){
   .w3-container{ padding-left:1rem; padding-right:1rem; }
@@ -207,11 +252,15 @@ html{ scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg); }
   .cta-row{ gap:.5rem; }
   .calendly-btn, .cv-link{ width:100%; justify-content:center; }
   /* Improve line spacing for wrapped author name on home */
-  .home-title{ line-height: 1.0; }
+  .home-title{ line-height: 1.2; }
 }
 
 /* Slightly larger breakpoint to ensure comfortable spacing on bigger phones */
-@media (max-width:640px){ .home-title{ line-height: 1.0; } }
+@media (max-width:640px){ .home-title{ line-height: 1.2; } }
+
+/* Global heading line-height for readability */
+h1, h2, h3{ line-height: 1.2; }
+@media (max-width:640px){ h1, h2, h3{ line-height: 1.25; } }
 
 /* Hauteur d’écran mobile moderne */
 @supports (min-height: 100dvh){
@@ -237,7 +286,7 @@ html{ scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg); }
 
 /* Rangées de tags */
 .tag-row{ display:flex; flex-wrap:wrap; gap:.5rem; }
-.tag{ padding:.25rem .6rem; opacity:.95; }
+.tag{ padding:.25rem .6rem; opacity:.95; background: transparent; }
 .tag-role{ border-color:#64b5f6; } /* bleu clair */
 .tag-tech{ border-color:#81c784; } /* vert doux */
 

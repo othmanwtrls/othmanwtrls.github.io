@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Banking Software on Othman Wtrls Portfolio</title>
+    <link>/tech/banking-software/</link>
+    <description>Recent content in Banking Software on Othman Wtrls Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tech/banking-software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Developer – Sopra Steria</title>
+      <link>/work/sopra/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>/work/sopra/</guid>
+      <description>From end-of-studies internship to junior developer, building and maintaining banking applications</description>
+    </item>
+  </channel>
+</rss>

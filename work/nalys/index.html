@@ -13,7 +13,18 @@
   
     
   
-  <link rel="stylesheet" href="/css/main.min.b89ab0a684414aa9767b776542a18cad51d16e331f99567eff26f3915ecd2c9c.css" integrity="sha256-uJqwpoRBSql2e3dlQqGMrVHRbjMfmVZ&#43;/ybzkV7NLJw=">
+  <link rel="stylesheet" href="/css/main.min.1644e9e178b95657f57df8b9205813ce45fc566f9fa7705e52f5e930b55a8922.css" integrity="sha256-FkTp4Xi5Vlf1ffi5IFgTzkX8Vm&#43;fp3BeUvXpMLVaiSI=">
+  <script>
+    (function(){
+      try{
+        var saved = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (saved === 'light' || (!saved && prefersLight)) {
+          document.documentElement.setAttribute('data-theme','light');
+        }
+      }catch(e){}
+    })();
+  </script>
 </head>
 
 <script>
@@ -83,7 +94,14 @@
   </button>
 
   
-  <div class="w3-right w3-hide-small">
+  <button id="themeToggleMobile"
+          class="w3-bar-item w3-right w3-hide-medium w3-hide-large theme-toggle"
+          aria-label="Changer le thème" title="Toggle theme">
+    <i class="fa-regular fa-moon" aria-hidden="true"></i>
+  </button>
+
+  
+  <div class="w3-right w3-hide-small" style="display:flex; align-items:center; gap:.5rem;">
     
       
         <a href="/about/" class="w3-bar-item" style="text-decoration:none;">
@@ -99,6 +117,9 @@
         </a>
       
     
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+      <i class="fa-regular fa-moon" aria-hidden="true"></i>
+    </button>
   </div>
 </nav>
 
@@ -131,7 +152,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/work.min.76c7674652304d08c33338bf004452e6a634546df7876d41131ccab575fff903.css" integrity="sha256-dsdnRlIwTQjDMzi/AERS5qY0VG33h21BExzKtXX/&#43;QM=">
+  <link rel="stylesheet" href="/css/work.min.0ca2941b93887c0707e2f5c5e28d3cf4f50079d45b5ee1b219d5c72609f566f4.css" integrity="sha256-DKKUG5OIfAcH4vXF4o089PUAedRbXuGyGdXHJgn1ZvQ=">
 
   
   
@@ -250,6 +271,37 @@ The experience started with an intensive <strong>three-month training program</s
   </section>
 </footer>
 
+
+  <script>
+    (function(){
+      function setIcon(){
+        var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        var btns = [
+          document.getElementById('themeToggle'),
+          document.getElementById('themeToggleMobile')
+        ].filter(Boolean);
+        btns.forEach(function(btn){
+          var i = btn.querySelector('i');
+          if (i){ i.className = isLight ? 'fa-regular fa-sun' : 'fa-regular fa-moon'; }
+        });
+      }
+      function toggleTheme(){
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'light' ? '' : 'light';
+        if (next) document.documentElement.setAttribute('data-theme', next);
+        else document.documentElement.removeAttribute('data-theme');
+        try{ localStorage.setItem('theme', next || 'dark'); }catch(e){}
+        setIcon();
+      }
+      document.addEventListener('DOMContentLoaded', function(){
+        var b1 = document.getElementById('themeToggle');
+        var b2 = document.getElementById('themeToggleMobile');
+        if (b1) b1.addEventListener('click', toggleTheme);
+        if (b2) b2.addEventListener('click', toggleTheme);
+        setIcon();
+      });
+    })();
+  </script>
 
   
   <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">

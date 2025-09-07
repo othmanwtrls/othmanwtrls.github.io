@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2025-09-07T12:04:17+02:00</lastmod>
-  </url><url>
-    <loc>/work/</loc>
-    <lastmod>2025-09-07T12:04:17+02:00</lastmod>
-  </url><url>
     <loc>/tech/agile/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/banking-software/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/cobol/java-like/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/work/afelio/</loc>
@@ -17,16 +17,31 @@
     <loc>/tech/database/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tech/python/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/roles/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tech/sav/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/roles/software-developer/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/work/sopra/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/roles/software-engineer/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/work/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/c/c&#43;&#43;/</loc>

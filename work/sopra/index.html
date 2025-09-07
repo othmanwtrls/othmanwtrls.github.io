@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
-  <title>Sopra</title>
+  <title>Software Developer – Sopra Steria</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="images/serpent.png">
@@ -11,7 +11,20 @@
   
   
   
-  <link rel="stylesheet" href="/css/main.css" >
+    
+  
+  <link rel="stylesheet" href="/css/main.min.1644e9e178b95657f57df8b9205813ce45fc566f9fa7705e52f5e930b55a8922.css" integrity="sha256-FkTp4Xi5Vlf1ffi5IFgTzkX8Vm&#43;fp3BeUvXpMLVaiSI=">
+  <script>
+    (function(){
+      try{
+        var saved = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (saved === 'light' || (!saved && prefersLight)) {
+          document.documentElement.setAttribute('data-theme','light');
+        }
+      }catch(e){}
+    })();
+  </script>
 </head>
 
 <script>
@@ -81,7 +94,14 @@
   </button>
 
   
-  <div class="w3-right w3-hide-small">
+  <button id="themeToggleMobile"
+          class="w3-bar-item w3-right w3-hide-medium w3-hide-large theme-toggle"
+          aria-label="Changer le thème" title="Toggle theme">
+    <i class="fa-regular fa-moon" aria-hidden="true"></i>
+  </button>
+
+  
+  <div class="w3-right w3-hide-small" style="display:flex; align-items:center; gap:.5rem;">
     
       
         <a href="/about/" class="w3-bar-item" style="text-decoration:none;">
@@ -97,6 +117,9 @@
         </a>
       
     
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+      <i class="fa-regular fa-moon" aria-hidden="true"></i>
+    </button>
   </div>
 </nav>
 
@@ -129,31 +152,33 @@
   
   
   
-  <link rel="stylesheet" href="/css/work.min.76c7674652304d08c33338bf004452e6a634546df7876d41131ccab575fff903.css" integrity="sha256-dsdnRlIwTQjDMzi/AERS5qY0VG33h21BExzKtXX/&#43;QM=">
+  <link rel="stylesheet" href="/css/work.min.0ca2941b93887c0707e2f5c5e28d3cf4f50079d45b5ee1b219d5c72609f566f4.css" integrity="sha256-DKKUG5OIfAcH4vXF4o089PUAedRbXuGyGdXHJgn1ZvQ=">
 
   
   
 
   <header class="work-hero w3-section">
     <div class="work-title-row">
-      <h1 class="work-title w3-margin-0">Sopra</h1>
+      <h1 class="work-title w3-margin-0">Software Developer – Sopra Steria</h1>
 
       
       
       
       
-        <span class="role-chip"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Developer</span>
+        <span class="role-chip"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Software Developer</span>
       
     </div>
 
     <div class="work-meta w3-small w3-text-light-grey">
       <div class="meta-left">
         
+          <span class="meta-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Valencia, Spain</span>
+        
       </div>
       <div class="meta-right w3-right-align">
         <span class="meta-item">
           <i class="fa-regular fa-calendar" aria-hidden="true"></i>
-          2023 – Now
+          2019 – 2020
           (
 
 
@@ -161,6 +186,7 @@
 
 
 
+  
 
 
 
@@ -174,22 +200,47 @@
 
 
 
-2 y 8 m
+
+
+  7 mois
+
 )
         </span>
       </div>
     </div>
 
     <div class="tag-row" style="margin:.5rem 0 0">
-      <span class="tag w3-tag w3-round w3-border tag-tech">Python</span><span class="tag w3-tag w3-round w3-border tag-tech">Agile</span>
+      <span class="tag w3-tag w3-round w3-border tag-tech">Banking Software</span><span class="tag w3-tag w3-round w3-border tag-tech">COBOL/Java-like</span><span class="tag w3-tag w3-round w3-border tag-tech">SAV</span>
     </div>
 
+    
+      <p class="work-summary w3-opacity">From end-of-studies internship to junior developer, building and maintaining banking applications</p>
     
   </header>
 
   <div class="work-content prose">
-    <p>Courte description d’intro (1–2 phrases).</p>
-<p>Détails plus complets de l’expérience…</p>
+    <h1 id="software-developer--sopra-steria">Software Developer – Sopra Steria</h1>
+<p>I joined <strong>Sopra Steria</strong> in Valencia, Spain, in October 2019 to complete my <strong>end-of-studies internship</strong>. After successfully validating my internship, I continued working for a few more months as a <strong>junior software developer</strong> before moving on in May 2020.</p>
+<p>The work focused on developing and maintaining applications for the <strong>banking sector</strong>, using a proprietary programming language close to <strong>COBOL/Java</strong>. My tasks included implementing new features, debugging existing code, and providing <strong>support (SAV)</strong> for critical banking systems.</p>
+<p>Unlike my later experiences, this role was carried out in a <strong>traditional development environment</strong> without Agile methodologies, which gave me insight into the workflows of large, established companies in the financial industry.</p>
+<hr>
+<h2 id="key-responsibilities">Key Responsibilities</h2>
+<ul>
+<li>Developed and maintained internal applications for banking clients.</li>
+<li>Worked with a proprietary <strong>COBOL/Java-like language</strong> specific to Sopra Steria’s banking solutions.</li>
+<li>Delivered bug fixes, updates, and handled <strong>support requests (SAV)</strong>.</li>
+<li>Transitioned from <strong>internship</strong> to <strong>junior developer role</strong> after graduation.</li>
+</ul>
+<hr>
+<h2 id="technologies--tools">Technologies &amp; Tools</h2>
+<ul>
+<li>Proprietary banking development language (COBOL/Java-like).</li>
+<li>Legacy banking systems and support tools.</li>
+<li>Traditional (non-Agile) development processes.</li>
+</ul>
+<hr>
+<p>💡 This experience marked the beginning of my professional career: it allowed me to validate my final year of studies, gain <strong>hands-on exposure to enterprise-scale banking software</strong>, and make the transition from <strong>internship to developer role</strong>.</p>
+
   </div>
 
   <p class="w3-section"><a href="/work/">← Back to Work</a></p>
@@ -207,6 +258,37 @@
   </section>
 </footer>
 
+
+  <script>
+    (function(){
+      function setIcon(){
+        var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        var btns = [
+          document.getElementById('themeToggle'),
+          document.getElementById('themeToggleMobile')
+        ].filter(Boolean);
+        btns.forEach(function(btn){
+          var i = btn.querySelector('i');
+          if (i){ i.className = isLight ? 'fa-regular fa-sun' : 'fa-regular fa-moon'; }
+        });
+      }
+      function toggleTheme(){
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'light' ? '' : 'light';
+        if (next) document.documentElement.setAttribute('data-theme', next);
+        else document.documentElement.removeAttribute('data-theme');
+        try{ localStorage.setItem('theme', next || 'dark'); }catch(e){}
+        setIcon();
+      }
+      document.addEventListener('DOMContentLoaded', function(){
+        var b1 = document.getElementById('themeToggle');
+        var b2 = document.getElementById('themeToggleMobile');
+        if (b1) b1.addEventListener('click', toggleTheme);
+        if (b2) b2.addEventListener('click', toggleTheme);
+        setIcon();
+      });
+    })();
+  </script>
 
   
   <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
