@@ -14,6 +14,8 @@ body {
 /* Prevent layout shift when vertical scrollbar appears/disappears */
 /* Always reserve vertical scrollbar space to prevent header shift */
 html { scrollbar-gutter: stable; overflow-y: scroll; }
+/* Remove grey tap highlight on mobile for buttons/links */
+button, a{ -webkit-tap-highlight-color: transparent; }
 
 .w3-container {
   margin: 1rem auto;
@@ -188,26 +190,24 @@ main{ padding-top: 72px; }
 }
 [data-theme="light"] .contact-info .contact-link{ color:#111; }
 
-/* Theme toggle button */
-.theme-toggle{
+/* Toggle buttons (theme + language) */
+.theme-toggle, .lang-toggle{
   width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center;
   border:1px solid #2b2b2b; border-radius:8px; background:#1b1b1b; color:#fafafa; cursor:pointer;
 }
-.theme-toggle:hover{ background:#2a2a2a; border-color:#3a3a3a; }
+.theme-toggle:hover, .lang-toggle:hover{ background:#2a2a2a; border-color:#3a3a3a; }
+/* Keep same colors when focused/active (no persistent change after click) */
+.theme-toggle:focus, .theme-toggle:active,
+.lang-toggle:focus, .lang-toggle:active{
+  background:#1b1b1b; border-color:#2b2b2b; color:#fafafa; outline:none;
+}
 /* Ensure tight, centered icon */
-.theme-toggle i{ font-size:18px; line-height:1; display:block; }
+.theme-toggle i, .lang-toggle i{ font-size:18px; line-height:1; display:block; }
 /* When used as a .w3-bar-item on mobile, remove extra padding */
-.w3-bar .theme-toggle{ padding:0 !important; margin:0; display:flex; align-items:center; justify-content:center; }
+.w3-bar .theme-toggle, .w3-bar .lang-toggle{ padding:0 !important; margin:0; display:flex; align-items:center; justify-content:center; }
 
 /* Language switcher */
 .lang-switcher{ position: relative; }
-.lang-toggle{
-  width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center;
-  border:1px solid #2b2b2b; border-radius:8px; background:#1b1b1b; color:#fafafa; cursor:pointer;
-}
-.lang-toggle:hover{ background:#2a2a2a; border-color:#3a3a3a; }
-.lang-toggle i{ font-size:18px; line-height:1; display:block; }
-.w3-bar .lang-toggle{ padding:0 !important; margin:0; display:flex; align-items:center; justify-content:center; }
 
 .lang-menu{
   position: absolute;
@@ -297,9 +297,12 @@ html{ scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg); }
 [data-theme="light"] .mobile-menu .w3-bar-block,
 [data-theme="light"] .work-hero{ background:#ffffff; border-color:#e5e7eb; color:#111; }
 [data-theme="light"] .mobile-menu .w3-bar-block{ background:#ffffff; }
-[data-theme="light"] .theme-toggle{ background:#ffffff; border-color:#e5e7eb; color:#111; }
+[data-theme="light"] .theme-toggle, [data-theme="light"] .lang-toggle{ background:#ffffff; border-color:#e5e7eb; color:#111; }
+[data-theme="light"] .theme-toggle:focus, [data-theme="light"] .theme-toggle:active,
+[data-theme="light"] .lang-toggle:focus, [data-theme="light"] .lang-toggle:active{
+  background:#ffffff; border-color:#e5e7eb; color:#111; outline:none;
+}
 [data-theme="light"] .back-to-top{ background:#ffffff; border-color:#e5e7eb; color:#111; }
-[data-theme="light"] .lang-toggle{ background:#ffffff; border-color:#e5e7eb; color:#111; }
 [data-theme="light"] .lang-menu{ background:#ffffff; border-color:#e5e7eb; }
 [data-theme="light"] .lang-item{ color:#111; }
 [data-theme="light"] .lang-item:hover{ background:#f2f2f2; }
