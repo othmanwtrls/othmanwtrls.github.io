@@ -5,7 +5,7 @@
   <title>Work</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="https://othmanwtrls.dev/images/serpent.png">
+  <link rel="icon" type="image/png" href="images/serpent.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
@@ -13,7 +13,7 @@
   
     
   
-  <link rel="stylesheet" href="/css/main.min.b1c1c69923a63b8e6a37c8f7f8bfe278b5c4a0fa4c5a28d92c275d78405323c0.css" integrity="sha256-scHGmSOmO45qN8j3&#43;L/ieLXEoPpMWijZLCddeEBTI8A=">
+  <link rel="stylesheet" href="/css/main.min.5eb220140e7ab418f6ed84c3dd6f829eebd9db7d0163cd6599ce296534f8ebe5.css" integrity="sha256-XrIgFA56tBj27YTD3W&#43;CnuvZ230BY81lmc4pZTT46&#43;U=">
   <script>
     (function(){
       try{
@@ -79,7 +79,7 @@
   <header class="site-header">
 <nav class="w3-bar w3-container">
   
-  <a href="/" class="w3-bar-item" style="text-decoration:none;">
+  <a href="/" class="w3-bar-item site-title" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
   </a>
 
@@ -101,6 +101,23 @@
   </button>
 
   
+  <div class="w3-right w3-hide-medium w3-hide-large lang-switcher">
+    <button id="langToggleMobile"
+            class="w3-bar-item lang-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="langMenuMobile"
+            title="Changer de langue">
+      <i class="fa-solid fa-globe" aria-hidden="true"></i>
+    </button>
+    <div id="langMenuMobile" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
+      <button class="lang-item" role="menuitem" data-lang="fr">Français</button>
+      <button class="lang-item" role="menuitem" data-lang="en">English</button>
+      <button class="lang-item" role="menuitem" data-lang="es">Español</button>
+    </div>
+  </div>
+
+  
   <div class="w3-right w3-hide-small" style="display:flex; align-items:center; gap:.5rem;">
     
       
@@ -117,6 +134,17 @@
         </a>
       
     
+    
+    <div class="lang-switcher">
+      <button id="langToggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" title="Changer de langue">
+        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+      </button>
+      <div id="langMenu" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
+        <button class="lang-item" role="menuitem" data-lang="fr">Français</button>
+        <button class="lang-item" role="menuitem" data-lang="en">English</button>
+        <button class="lang-item" role="menuitem" data-lang="es">Español</button>
+      </div>
+    </div>
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
       <i class="fa-regular fa-moon" aria-hidden="true"></i>
     </button>
@@ -162,6 +190,8 @@
   
     
   
+    
+  
   
   
   
@@ -194,6 +224,12 @@
       
     
   
+    
+      
+      
+      
+    
+  
   
   
     
@@ -237,6 +273,19 @@
         
         
       
+    
+  
+    
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
         
         
       
@@ -272,6 +321,8 @@
     
   
   
+  
+    
   
     
   
@@ -341,7 +392,7 @@
           <div id="roleMenu" class="role-menu">
             <a href="#" class="role-menu-item" data-value="">
               <span>All roles</span>
-              <span class="role-count">4</span>
+              <span class="role-count">5</span>
             </a>
             
               <a href="#" class="role-menu-item" data-value="DevOps Engineer">
@@ -349,13 +400,13 @@
                 <span class="role-count">2</span>
               </a>
             
-              <a href="#" class="role-menu-item" data-value="Software Developer">
-                <span>Software Developer</span>
-                <span class="role-count">1</span>
-              </a>
-            
               <a href="#" class="role-menu-item" data-value="Software Engineer">
                 <span>Software Engineer</span>
+                <span class="role-count">2</span>
+              </a>
+            
+              <a href="#" class="role-menu-item" data-value="Software Developer">
+                <span>Software Developer</span>
                 <span class="role-count">1</span>
               </a>
             
@@ -374,13 +425,13 @@
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
                 <input type="checkbox" value="Python" class="w3-check">
                 <span class="tag w3-tag w3-round w3-small">Python</span>
-                <span class="tech-count">3</span>
+                <span class="tech-count">4</span>
               </label>
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
                 <input type="checkbox" value="Agile" class="w3-check">
                 <span class="tag w3-tag w3-round w3-small">Agile</span>
-                <span class="tech-count">2</span>
+                <span class="tech-count">3</span>
               </label>
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
@@ -416,6 +467,12 @@
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
                 <input type="checkbox" value="COBOL/Java-like" class="w3-check">
                 <span class="tag w3-tag w3-round w3-small">COBOL/Java-like</span>
+                <span class="tech-count">1</span>
+              </label>
+            
+              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
+                <input type="checkbox" value="DataBase" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">DataBase</span>
                 <span class="tech-count">1</span>
               </label>
             
@@ -523,6 +580,84 @@
               <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Agile</span>
             
               <span class="tag w3-tag w3-round w3-border w3-small tag-tech">SQL</span>
+            
+          </div>
+          
+        </a>
+      </div>
+
+    
+      
+      
+      
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Software Engineer" data-tech="Python,Agile,DataBase">
+        <a href="/work/afelio/" class="work-card w3-card-4 w3-display-container">
+          
+          <div class="w3-container w3-padding">
+            <h3 class="w3-margin-bottom" style="margin-top:0">Consulting Engineer – Afelio (via Nalys)</h3>
+
+            
+            
+            
+
+            <div class="w3-small w3-text-light-grey w3-row meta-row">
+              <div class="w3-col s7 m7 l7">
+                <span>📅
+                  2023 -
+                  2023
+                  (
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  7 mois
+
+)
+                </span>
+              </div>
+              <div class="w3-col s5 m5 l5 w3-right-align">
+                
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Software Engineer</span>
+                
+              </div>
+              <div class="w3-col s6 m6 l6">
+                
+                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Liège, Belgium</span>
+                
+              </div>
+            </div>
+
+            <p class="w3-opacity summary-text">
+              Consulting engineer developing Python packages for FN Herstal using Agile methods
+            </p>
+          </div>
+
+          
+          <div class="w3-container w3-small card-techs">
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Python</span>
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Agile</span>
+            
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">DataBase</span>
             
           </div>
           
@@ -812,6 +947,38 @@
         if (b1) b1.addEventListener('click', toggleTheme);
         if (b2) b2.addEventListener('click', toggleTheme);
         setIcon();
+      });
+    })();
+  </script>
+
+  
+  <script>
+    (function(){
+      function setup(idBtn, idMenu){
+        var btn = document.getElementById(idBtn);
+        var menu = document.getElementById(idMenu);
+        if (!btn || !menu) return;
+        function open(){ menu.classList.add('is-open'); btn.setAttribute('aria-expanded','true'); }
+        function close(){ menu.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); }
+        function toggle(e){ e.preventDefault(); e.stopPropagation(); menu.classList.contains('is-open') ? close() : open(); }
+        btn.addEventListener('click', toggle);
+        menu.addEventListener('click', function(e){
+          var item = e.target.closest('.lang-item');
+          if (item){
+            
+            close();
+          }
+        });
+        document.addEventListener('click', function(e){
+          if (!menu.classList.contains('is-open')) return;
+          if (e.target === btn || btn.contains(e.target) || menu.contains(e.target)) return;
+          close();
+        });
+        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+      }
+      document.addEventListener('DOMContentLoaded', function(){
+        setup('langToggle', 'langMenu');
+        setup('langToggleMobile', 'langMenuMobile');
       });
     })();
   </script>

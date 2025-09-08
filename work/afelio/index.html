@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
   <title>Consulting Engineer – Afelio (via Nalys)</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="http://localhost:1313/images/serpent.png">
+  <link rel="icon" type="image/png" href="images/serpent.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
   
   
-  <link rel="stylesheet" href="/css/main.css" >
+    
+  
+  <link rel="stylesheet" href="/css/main.min.5eb220140e7ab418f6ed84c3dd6f829eebd9db7d0163cd6599ce296534f8ebe5.css" integrity="sha256-XrIgFA56tBj27YTD3W&#43;CnuvZ230BY81lmc4pZTT46&#43;U=">
   <script>
     (function(){
       try{
@@ -77,7 +79,7 @@
   <header class="site-header">
 <nav class="w3-bar w3-container">
   
-  <a href="/" class="w3-bar-item" style="text-decoration:none;">
+  <a href="/" class="w3-bar-item site-title" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
   </a>
 
@@ -99,6 +101,23 @@
   </button>
 
   
+  <div class="w3-right w3-hide-medium w3-hide-large lang-switcher">
+    <button id="langToggleMobile"
+            class="w3-bar-item lang-toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="langMenuMobile"
+            title="Changer de langue">
+      <i class="fa-solid fa-globe" aria-hidden="true"></i>
+    </button>
+    <div id="langMenuMobile" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
+      <button class="lang-item" role="menuitem" data-lang="fr">Français</button>
+      <button class="lang-item" role="menuitem" data-lang="en">English</button>
+      <button class="lang-item" role="menuitem" data-lang="es">Español</button>
+    </div>
+  </div>
+
+  
   <div class="w3-right w3-hide-small" style="display:flex; align-items:center; gap:.5rem;">
     
       
@@ -115,6 +134,17 @@
         </a>
       
     
+    
+    <div class="lang-switcher">
+      <button id="langToggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" title="Changer de langue">
+        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+      </button>
+      <div id="langMenu" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
+        <button class="lang-item" role="menuitem" data-lang="fr">Français</button>
+        <button class="lang-item" role="menuitem" data-lang="en">English</button>
+        <button class="lang-item" role="menuitem" data-lang="es">Español</button>
+      </div>
+    </div>
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
       <i class="fa-regular fa-moon" aria-hidden="true"></i>
     </button>
@@ -284,6 +314,38 @@
         if (b1) b1.addEventListener('click', toggleTheme);
         if (b2) b2.addEventListener('click', toggleTheme);
         setIcon();
+      });
+    })();
+  </script>
+
+  
+  <script>
+    (function(){
+      function setup(idBtn, idMenu){
+        var btn = document.getElementById(idBtn);
+        var menu = document.getElementById(idMenu);
+        if (!btn || !menu) return;
+        function open(){ menu.classList.add('is-open'); btn.setAttribute('aria-expanded','true'); }
+        function close(){ menu.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); }
+        function toggle(e){ e.preventDefault(); e.stopPropagation(); menu.classList.contains('is-open') ? close() : open(); }
+        btn.addEventListener('click', toggle);
+        menu.addEventListener('click', function(e){
+          var item = e.target.closest('.lang-item');
+          if (item){
+            
+            close();
+          }
+        });
+        document.addEventListener('click', function(e){
+          if (!menu.classList.contains('is-open')) return;
+          if (e.target === btn || btn.contains(e.target) || menu.contains(e.target)) return;
+          close();
+        });
+        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+      }
+      document.addEventListener('DOMContentLoaded', function(){
+        setup('langToggle', 'langMenu');
+        setup('langToggleMobile', 'langMenuMobile');
       });
     })();
   </script>

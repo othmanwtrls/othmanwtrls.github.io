@@ -123,6 +123,8 @@ body.about main{
 
 /* Barre compactée */
 nav.w3-bar{ padding:.5rem 0; }
+/* Allow dropdowns to overflow the navbar (override W3) */
+.site-header nav.w3-bar{ overflow: visible; }
 
 /* Fixed site header */
 .site-header{ position: fixed; top:0; left:0; right:0; z-index: 6000; background:#2c2c2c; border-bottom:1px solid #3a3a3a; }
@@ -197,11 +199,50 @@ main{ padding-top: 72px; }
 /* When used as a .w3-bar-item on mobile, remove extra padding */
 .w3-bar .theme-toggle{ padding:0 !important; margin:0; display:flex; align-items:center; justify-content:center; }
 
+/* Language switcher */
+.lang-switcher{ position: relative; }
+.lang-toggle{
+  width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid #2b2b2b; border-radius:8px; background:#1b1b1b; color:#fafafa; cursor:pointer;
+}
+.lang-toggle:hover{ background:#2a2a2a; border-color:#3a3a3a; }
+.lang-toggle i{ font-size:18px; line-height:1; display:block; }
+.w3-bar .lang-toggle{ padding:0 !important; margin:0; display:flex; align-items:center; justify-content:center; }
+
+.lang-menu{
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0; /* anchor to right so it never overflows on mobile */
+  min-width: 160px;
+  background: #1b1b1b;
+  border: 1px solid #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+  padding: 6px;
+  display: none;
+  z-index: 7000;
+}
+.lang-menu.is-open{ display: block; }
+.lang-item{
+  width: 100%;
+  text-align: left;
+  padding: 10px 10px;
+  border: none;
+  background: transparent;
+  color: #fafafa;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.lang-item:hover{ background:#2a2a2a; }
+
 /* Mobile fine-tuning: square, centered buttons in the navbar */
 @media (max-width:640px){
   #hamburgerBtn{ width:40px; height:40px; }
   .w3-bar .theme-toggle{ width:40px; height:40px; }
+  .w3-bar .lang-toggle{ width:40px; height:40px; }
   #hamburgerBtn i{ font-size:18px; line-height:1; display:block; }
+  /* Slightly smaller site title on mobile */
+  .site-title{ font-size:1.1rem; }
 }
 
 /* Simple dark scrollbars */
@@ -258,6 +299,10 @@ html{ scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg); }
 [data-theme="light"] .mobile-menu .w3-bar-block{ background:#ffffff; }
 [data-theme="light"] .theme-toggle{ background:#ffffff; border-color:#e5e7eb; color:#111; }
 [data-theme="light"] .back-to-top{ background:#ffffff; border-color:#e5e7eb; color:#111; }
+[data-theme="light"] .lang-toggle{ background:#ffffff; border-color:#e5e7eb; color:#111; }
+[data-theme="light"] .lang-menu{ background:#ffffff; border-color:#e5e7eb; }
+[data-theme="light"] .lang-item{ color:#111; }
+[data-theme="light"] .lang-item:hover{ background:#f2f2f2; }
 [data-theme="light"] .btn-reset{ border-color:#111; color:#111; }
 
 /* Lisibilité & respiration en petit écran */
