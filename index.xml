@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Othman Wtrls Portfolio</title>
-    <link>/</link>
+    <link>https://othmanwtrls.dev/</link>
     <description>Recent content on Othman Wtrls Portfolio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://othmanwtrls.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Developer – Sopra Steria</title>
-      <link>/work/sopra/</link>
+      <link>https://othmanwtrls.dev/work/sopra/</link>
       <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>/work/sopra/</guid>
+      <guid>https://othmanwtrls.dev/work/sopra/</guid>
       <description>From end-of-studies internship to junior developer, building and maintaining banking applications</description>
     </item>
     <item>
       <title>Software &amp; DevOps Engineer - Nalys</title>
-      <link>/work/nalys/</link>
+      <link>https://othmanwtrls.dev/work/nalys/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>/work/nalys/</guid>
+      <guid>https://othmanwtrls.dev/work/nalys/</guid>
       <description>DevOps &amp;amp; embedded systems consultant supporting software integration projects</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>/about/</link>
+      <link>https://othmanwtrls.dev/about/</link>
       <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
+      <guid>https://othmanwtrls.dev/about/</guid>
       <description>&lt;h1 id=&#34;-about-me&#34;&gt;👨‍💻 About Me&lt;/h1&gt;&#xA;&lt;p&gt;Hello and welcome!&lt;/p&gt;&#xA;&lt;p&gt;I’m a &lt;strong&gt;Computer Engineer&lt;/strong&gt; with a passion for teaching and knowledge sharing.&lt;br&gt;&#xA;Over the years, I’ve worked on diverse &lt;strong&gt;projects&lt;/strong&gt; while also helping students and professionals strengthen their skills in &lt;strong&gt;computer science, engineering, and academic subjects&lt;/strong&gt;.&#xA;My goal is simple: make complex topics clear, practical, and accessible — whether you’re preparing for exams, starting a new project, or simply curious to learn.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-what-i-offer&#34;&gt;🎯 What I Offer&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-computer-science--it-coaching&#34;&gt;💻 Computer Science &amp;amp; IT Coaching&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Programming &amp;amp; application: &lt;strong&gt;Python, C, C#, C++&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Web development: &lt;strong&gt;HTML, CSS, Bootstrap, Hugo&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Databases: &lt;strong&gt;SQL&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Tools &amp;amp; automation: &lt;strong&gt;Git, CI/CD, Make, Excel, VBA&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Fundamentals: computer basics, algorithms, and project support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Learn the essentials, strengthen your coding skills, or get guidance on your personal/academic projects.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software &amp; DevOps Engineer - Diamidex</title>
-      <link>/work/diamidex/</link>
+      <link>https://othmanwtrls.dev/work/diamidex/</link>
       <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
-      <guid>/work/diamidex/</guid>
+      <guid>https://othmanwtrls.dev/work/diamidex/</guid>
       <description>From UI to CI/CD: DevOps engineer shaping Diamidex’s MICA solution</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>https://othmanwtrls.dev/contact/</link>
       <pubDate>Sun, 10 Aug 2025 09:42:04 +0200</pubDate>
-      <guid>/contact/</guid>
+      <guid>https://othmanwtrls.dev/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Engineer – Dynapac</title>
-      <link>/work/dynapac/</link>
+      <link>https://othmanwtrls.dev/work/dynapac/</link>
       <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>/work/dynapac/</guid>
+      <guid>https://othmanwtrls.dev/work/dynapac/</guid>
       <description>Developed machine-control applications in Python and C# for construction equipment</description>
     </item>
   </channel>
