@@ -118,5 +118,31 @@
                 hreflang="fr"
                 href="https://othmanwtrls.dev/fr/work/dynapac/"
                 />
+  </url><url>
+    <loc>https://othmanwtrls.dev/fr/work/other/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://othmanwtrls.dev/work/other/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://othmanwtrls.dev/fr/work/other/"
+                />
+  </url><url>
+    <loc>https://othmanwtrls.dev/fr/work/stjo/</loc>
+    <lastmod>2021-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://othmanwtrls.dev/work/stjo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://othmanwtrls.dev/fr/work/stjo/"
+                />
   </url>
 </urlset>
