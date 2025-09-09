@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Work</title>
+  <title>Expérience</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="images/serpent.png">
@@ -79,7 +79,7 @@
   <header class="site-header">
 <nav class="w3-bar w3-container">
   
-  <a href="/" class="w3-bar-item site-title" style="text-decoration:none;">
+  <a href="/fr/" class="w3-bar-item site-title" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
   </a>
 
@@ -109,11 +109,11 @@
             aria-controls="langMenuMobile"
             title="Changer de langue">
       <i class="fa-solid fa-globe" aria-hidden="true"></i>
-      <span class="lang-badge">EN</span>
+      <span class="lang-badge">FR</span>
     </button>
     <div id="langMenuMobile" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-      <button class="lang-item " role="menuitem" data-lang="fr" data-href="/fr/work/">Français</button>
-      <button class="lang-item is-current" role="menuitem" data-lang="en" data-href="/work/">English</button>
+      <button class="lang-item is-current" role="menuitem" data-lang="fr" data-href="/fr/work/">Français</button>
+      <button class="lang-item " role="menuitem" data-lang="en" data-href="/work/">English</button>
     </div>
   </div>
 
@@ -121,15 +121,15 @@
   <div class="w3-right w3-hide-small" style="display:flex; align-items:center; gap:.5rem;">
     
       
-        <a href="/about/" class="w3-bar-item" style="text-decoration:none;">
-          About
+        <a href="/fr/about/" class="w3-bar-item" style="text-decoration:none;">
+          À propos
         </a>
       
-        <a href="/work/" class="w3-bar-item" style="text-decoration:none;">
-          Work
+        <a href="/fr/work/" class="w3-bar-item" style="text-decoration:none;">
+          Expérience
         </a>
       
-        <a href="/contact/" class="w3-bar-item" style="text-decoration:none;">
+        <a href="/fr/contact/" class="w3-bar-item" style="text-decoration:none;">
           Contact
         </a>
       
@@ -138,11 +138,11 @@
     <div class="lang-switcher">
       <button id="langToggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" title="Changer de langue">
         <i class="fa-solid fa-globe" aria-hidden="true"></i>
-        <span class="lang-badge">EN</span>
+        <span class="lang-badge">FR</span>
       </button>
       <div id="langMenu" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-        <button class="lang-item " role="menuitem" data-lang="fr" data-href="/fr/work/">Français</button>
-        <button class="lang-item is-current" role="menuitem" data-lang="en" data-href="/work/">English</button>
+        <button class="lang-item is-current" role="menuitem" data-lang="fr" data-href="/fr/work/">Français</button>
+        <button class="lang-item " role="menuitem" data-lang="en" data-href="/work/">English</button>
       </div>
     </div>
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
@@ -156,15 +156,15 @@
   <div class="w3-bar-block w3-card">
     
       
-        <a href="/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          About
+        <a href="/fr/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          À propos
         </a>
       
-        <a href="/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          Work
+        <a href="/fr/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Expérience
         </a>
       
-        <a href="/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+        <a href="/fr/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
           Contact
         </a>
       
@@ -175,7 +175,7 @@
 
 <script>
   (function() {
-    const htmlLang = "en"; 
+    const htmlLang = "fr"; 
     const storageKey = 'siteLang';
 
     function getPreferredLang() {
@@ -418,7 +418,7 @@
   <script defer src="/js/work.min.93910d4330994d41593c1e8a2d3889d5e4d268c4020cc1370cba89843a6c3c04.js" integrity="sha256-k5ENQzCZTUFZPB6KLTiJ1eTSaMQCDME3DLqJhDpsPAQ="></script>
 
   <header class="w3-margin-bottom">
-    <h1 class="w3-xxlarge w3-margin-0">Work</h1>
+    <h1 class="w3-xxlarge w3-margin-0">Expérience</h1>
     
 
     
@@ -426,7 +426,7 @@
       <div class="w3-col s12">
         <div class="w3-section">
           <button id="filtersToggle" class="w3-button w3-dark-grey filters-toggle" aria-expanded="false" aria-controls="filtersPanel">
-            <span>Filters</span>
+            <span>Filtres</span>
             <span id="filtersChevron" aria-hidden="true" class="chevron">▾</span>
           </button>
         </div>
@@ -438,34 +438,34 @@
       <div class="w3-col s12">
         <div id="filtersPanel" class="filters-panel">
       <div class="filters-panel-actions">
-        <button type="button" id="clearTech" class="btn-reset">Reset</button>
+        <button type="button" id="clearTech" class="btn-reset">Réinitialiser</button>
       </div>
       
       <div class="w3-section">
-        <label class="w3-medium">Filter by role</label>
+        <label class="w3-medium">Filtre par métier</label>
         <div class="role-dropdown">
           <button id="roleBtn" class="role-button">
-            <span id="roleLabel" data-default="All roles">All roles</span>
+            <span id="roleLabel" data-default="Tous les rôles">Tous les rôles</span>
             <span aria-hidden="true">▾</span>
           </button>
           <div id="roleMenu" class="role-menu">
             <a href="#" class="role-menu-item" data-value="">
-              <span>All roles</span>
+              <span>Tous les rôles</span>
               <span class="role-count">5</span>
             </a>
             
-              <a href="#" class="role-menu-item" data-value="DevOps Engineer">
-                <span>DevOps Engineer</span>
+              <a href="#" class="role-menu-item" data-value="Ingénieur DevOps">
+                <span>Ingénieur DevOps</span>
                 <span class="role-count">2</span>
               </a>
             
-              <a href="#" class="role-menu-item" data-value="Software Engineer">
-                <span>Software Engineer</span>
+              <a href="#" class="role-menu-item" data-value="Ingénieur logiciel">
+                <span>Ingénieur logiciel</span>
                 <span class="role-count">2</span>
               </a>
             
-              <a href="#" class="role-menu-item" data-value="Software Developer">
-                <span>Software Developer</span>
+              <a href="#" class="role-menu-item" data-value="Développeur logiciel">
+                <span>Développeur logiciel</span>
                 <span class="role-count">1</span>
               </a>
             
@@ -476,7 +476,7 @@
       
       <div class="w3-section">
         <div class="filters-row">
-          <label class="w3-medium">Filter by technologies</label>
+          <label class="w3-medium">Filtre par technologie</label>
         </div>
         <div id="techFilters" class="tech-filters w3-padding-small w3-round">
           
@@ -500,8 +500,8 @@
               </label>
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
-                <input type="checkbox" value="Banking Software" class="w3-check">
-                <span class="tag w3-tag w3-round w3-small">Banking Software</span>
+                <input type="checkbox" value="Base de données" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">Base de données</span>
                 <span class="tech-count">1</span>
               </label>
             
@@ -524,20 +524,20 @@
               </label>
             
               <label class="w3-margin-right w3-margin-bottom tech-filter-item">
-                <input type="checkbox" value="COBOL/Java-like" class="w3-check">
-                <span class="tag w3-tag w3-round w3-small">COBOL/Java-like</span>
-                <span class="tech-count">1</span>
-              </label>
-            
-              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
-                <input type="checkbox" value="DataBase" class="w3-check">
-                <span class="tag w3-tag w3-round w3-small">DataBase</span>
-                <span class="tech-count">1</span>
-              </label>
-            
-              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
                 <input type="checkbox" value="Docker" class="w3-check">
                 <span class="tag w3-tag w3-round w3-small">Docker</span>
+                <span class="tech-count">1</span>
+              </label>
+            
+              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
+                <input type="checkbox" value="Langage proche de COBOL/Java" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">Langage proche de COBOL/Java</span>
+                <span class="tech-count">1</span>
+              </label>
+            
+              <label class="w3-margin-right w3-margin-bottom tech-filter-item">
+                <input type="checkbox" value="Logiciels bancaires" class="w3-check">
+                <span class="tag w3-tag w3-round w3-small">Logiciels bancaires</span>
                 <span class="tech-count">1</span>
               </label>
             
@@ -571,11 +571,11 @@
       
       
       
-      <div class="w3-col l6 m12 s12 work-card-col" data-role="DevOps Engineer" data-tech="DevOps,Python,Qt6,Agile,SQL">
-        <a href="/work/diamidex/" class="work-card w3-card-4 w3-display-container">
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Ingénieur DevOps" data-tech="DevOps,Python,Qt6,Agile,SQL">
+        <a href="/fr/work/diamidex/" class="work-card w3-card-4 w3-display-container">
           
           <div class="w3-container w3-padding">
-            <h3 class="w3-margin-bottom" style="margin-top:0">Software &amp; DevOps Engineer - Diamidex</h3>
+            <h3 class="w3-margin-bottom" style="margin-top:0">Ingénieur logiciel &amp; DevOps – Diamidex</h3>
 
             
             
@@ -585,7 +585,7 @@
               <div class="w3-col s7 m7 l7">
                 <span>📅
                   2024 -
-                  Now
+                  Aujourd’hui
                   (
 
 
@@ -612,7 +612,7 @@
               </div>
               <div class="w3-col s5 m5 l5 w3-right-align">
                 
-                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 DevOps Engineer</span>
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Ingénieur DevOps</span>
                 
               </div>
               <div class="w3-col s6 m6 l6">
@@ -623,7 +623,7 @@
             </div>
 
             <p class="w3-opacity summary-text">
-              From UI to CI/CD: DevOps engineer shaping Diamidex’s MICA solution
+              De l’UI au CI/CD : ingénieur DevOps contribuant à la solution MICA de Diamidex
             </p>
           </div>
 
@@ -649,11 +649,11 @@
       
       
       
-      <div class="w3-col l6 m12 s12 work-card-col" data-role="Software Engineer" data-tech="Python,Agile,DataBase">
-        <a href="/work/afelio/" class="work-card w3-card-4 w3-display-container">
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Ingénieur logiciel" data-tech="Python,Agile,Base de données">
+        <a href="/fr/work/afelio/" class="work-card w3-card-4 w3-display-container">
           
           <div class="w3-container w3-padding">
-            <h3 class="w3-margin-bottom" style="margin-top:0">Consulting Engineer – Afelio (via Nalys)</h3>
+            <h3 class="w3-margin-bottom" style="margin-top:0">Ingénieur consultant – Afelio (via Nalys)</h3>
 
             
             
@@ -694,18 +694,18 @@
               </div>
               <div class="w3-col s5 m5 l5 w3-right-align">
                 
-                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Software Engineer</span>
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Ingénieur logiciel</span>
                 
               </div>
               <div class="w3-col s6 m6 l6">
                 
-                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Liège, Belgium</span>
+                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Liège, Belgique</span>
                 
               </div>
             </div>
 
             <p class="w3-opacity summary-text">
-              Consulting engineer developing Python packages for FN Herstal using Agile methods
+              Ingénieur consultant développant des packages Python pour FN Herstal en méthode Agile
             </p>
           </div>
 
@@ -716,7 +716,7 @@
             
               <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Agile</span>
             
-              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">DataBase</span>
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Base de données</span>
             
           </div>
           
@@ -727,11 +727,11 @@
       
       
       
-      <div class="w3-col l6 m12 s12 work-card-col" data-role="DevOps Engineer" data-tech="DevOps,Python,C/C&#43;&#43;,Agile,Docker">
-        <a href="/work/nalys/" class="work-card w3-card-4 w3-display-container">
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Ingénieur DevOps" data-tech="DevOps,Python,C/C&#43;&#43;,Agile,Docker">
+        <a href="/fr/work/nalys/" class="work-card w3-card-4 w3-display-container">
           
           <div class="w3-container w3-padding">
-            <h3 class="w3-margin-bottom" style="margin-top:0">Software &amp; DevOps Engineer - Nalys</h3>
+            <h3 class="w3-margin-bottom" style="margin-top:0">Ingénieur logiciel &amp; DevOps – Nalys</h3>
 
             
             
@@ -772,18 +772,18 @@
               </div>
               <div class="w3-col s5 m5 l5 w3-right-align">
                 
-                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 DevOps Engineer</span>
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Ingénieur DevOps</span>
                 
               </div>
               <div class="w3-col s6 m6 l6">
                 
-                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bruxelles (Belgium)</span>
+                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bruxelles (Belgique)</span>
                 
               </div>
             </div>
 
             <p class="w3-opacity summary-text">
-              DevOps &amp; embedded systems consultant supporting software integration projects
+              Consultant DevOps &amp; systèmes embarqués, spécialisé en intégration logicielle
             </p>
           </div>
 
@@ -809,11 +809,11 @@
       
       
       
-      <div class="w3-col l6 m12 s12 work-card-col" data-role="Software Engineer" data-tech="Python,C#,CAN bus">
-        <a href="/work/dynapac/" class="work-card w3-card-4 w3-display-container">
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Ingénieur logiciel" data-tech="Python,C#,CAN bus">
+        <a href="/fr/work/dynapac/" class="work-card w3-card-4 w3-display-container">
           
           <div class="w3-container w3-padding">
-            <h3 class="w3-margin-bottom" style="margin-top:0">Software Engineer – Dynapac</h3>
+            <h3 class="w3-margin-bottom" style="margin-top:0">Ingénieur logiciel – Dynapac</h3>
 
             
             
@@ -854,18 +854,18 @@
               </div>
               <div class="w3-col s5 m5 l5 w3-right-align">
                 
-                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Software Engineer</span>
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Ingénieur logiciel</span>
                 
               </div>
               <div class="w3-col s6 m6 l6">
                 
-                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Karlskrona, Sweden</span>
+                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Karlskrona, Suède</span>
                 
               </div>
             </div>
 
             <p class="w3-opacity summary-text">
-              Developed machine-control applications in Python and C# for construction equipment
+              Développement d’applications de contrôle machines en Python et C# pour équipements de construction
             </p>
           </div>
 
@@ -887,11 +887,11 @@
       
       
       
-      <div class="w3-col l6 m12 s12 work-card-col" data-role="Software Developer" data-tech="Banking Software,COBOL/Java-like,SAV">
-        <a href="/work/sopra/" class="work-card w3-card-4 w3-display-container">
+      <div class="w3-col l6 m12 s12 work-card-col" data-role="Développeur logiciel" data-tech="Logiciels bancaires,Langage proche de COBOL/Java,SAV">
+        <a href="/fr/work/sopra/" class="work-card w3-card-4 w3-display-container">
           
           <div class="w3-container w3-padding">
-            <h3 class="w3-margin-bottom" style="margin-top:0">Software Developer – Sopra Steria</h3>
+            <h3 class="w3-margin-bottom" style="margin-top:0">Développeur logiciel – Sopra Steria</h3>
 
             
             
@@ -932,27 +932,27 @@
               </div>
               <div class="w3-col s5 m5 l5 w3-right-align">
                 
-                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Software Developer</span>
+                  <span class="tag w3-tag w3-round w3-border w3-small tag-role">💼 Développeur logiciel</span>
                 
               </div>
               <div class="w3-col s6 m6 l6">
                 
-                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Valencia, Spain</span>
+                  <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Valence, Espagne</span>
                 
               </div>
             </div>
 
             <p class="w3-opacity summary-text">
-              From end-of-studies internship to junior developer, building and maintaining banking applications
+              Du stage de fin d’études au poste de développeur junior : conception et maintenance d’applications bancaires
             </p>
           </div>
 
           
           <div class="w3-container w3-small card-techs">
             
-              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Banking Software</span>
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Logiciels bancaires</span>
             
-              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">COBOL/Java-like</span>
+              <span class="tag w3-tag w3-round w3-border w3-small tag-tech">Langage proche de COBOL/Java</span>
             
               <span class="tag w3-tag w3-round w3-border w3-small tag-tech">SAV</span>
             
@@ -974,7 +974,7 @@
     
       2025
     
-    Othman WAETERLOOS. All rights reserved.
+    Othman WAETERLOOS. Tous droits réservés.
   </section>
 </footer>
 
@@ -1037,7 +1037,7 @@
   </script>
 
   
-  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <button id="backToTop" class="back-to-top" aria-label="Haut de page" title="Haut de page">
     <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </button>
 

@@ -13,7 +13,7 @@
   
     
   
-  <link rel="stylesheet" href="/css/main.min.c6b0d433995b7d985ab1ec78cfcffc6f668492229b210c6b1a74a1b20fa87c6d.css" integrity="sha256-xrDUM5lbfZhasex4z8/8b2aEkiKbIQxrGnShsg&#43;ofG0=">
+  <link rel="stylesheet" href="/css/main.min.cf26b6161060b07ee36f602d9d0b5e1475dfa9216abec6f2d5692029c91edcb7.css" integrity="sha256-zya2FhBgsH7jb2AtnQteFHXfqSFqvsby1WkgKcke3Lc=">
   <script>
     (function(){
       try{
@@ -109,11 +109,11 @@
             aria-controls="langMenuMobile"
             title="Changer de langue">
       <i class="fa-solid fa-globe" aria-hidden="true"></i>
+      <span class="lang-badge">EN</span>
     </button>
     <div id="langMenuMobile" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-      <button class="lang-item" role="menuitem" data-lang="fr">Français</button>
-      <button class="lang-item" role="menuitem" data-lang="en">English</button>
-      <button class="lang-item" role="menuitem" data-lang="es">Español</button>
+      <button class="lang-item " role="menuitem" data-lang="fr" data-href="/fr/work/diamidex/">Français</button>
+      <button class="lang-item is-current" role="menuitem" data-lang="en" data-href="/work/diamidex/">English</button>
     </div>
   </div>
 
@@ -138,11 +138,11 @@
     <div class="lang-switcher">
       <button id="langToggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" title="Changer de langue">
         <i class="fa-solid fa-globe" aria-hidden="true"></i>
+        <span class="lang-badge">EN</span>
       </button>
       <div id="langMenu" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-        <button class="lang-item" role="menuitem" data-lang="fr">Français</button>
-        <button class="lang-item" role="menuitem" data-lang="en">English</button>
-        <button class="lang-item" role="menuitem" data-lang="es">Español</button>
+        <button class="lang-item " role="menuitem" data-lang="fr" data-href="/fr/work/diamidex/">Français</button>
+        <button class="lang-item is-current" role="menuitem" data-lang="en" data-href="/work/diamidex/">English</button>
       </div>
     </div>
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
@@ -172,6 +172,65 @@
   </div>
 </div>
 </header>
+
+<script>
+  (function() {
+    const htmlLang = "en"; 
+    const storageKey = 'siteLang';
+
+    function getPreferredLang() {
+      const stored = localStorage.getItem(storageKey);
+      if (stored === 'en' || stored === 'fr') return stored;
+      const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+      return (nav && nav.toLowerCase().startsWith('fr')) ? 'fr' : 'en';
+    }
+
+    function currentIs(lang) {
+      return htmlLang === lang;
+    }
+
+    function findLangEl(lang) {
+      const id = (window.matchMedia('(max-width: 600px)').matches) ? 'langMenuMobile' : 'langMenu';
+      const container = document.getElementById(id) || document;
+      return container.querySelector('.lang-item[data-lang="' + lang + '"]');
+    }
+
+    function maybeAutoRedirect() {
+      const stored = localStorage.getItem(storageKey);
+      const target = getPreferredLang();
+      if (currentIs(target)) return; 
+      
+      if (!stored) {
+        const el = findLangEl(target);
+        const href = el && (el.getAttribute('data-href') || el.getAttribute('href'));
+        if (href) {
+          window.location.href = href;
+        }
+      }
+    }
+
+    function wireLangMenus() {
+      document.querySelectorAll('.lang-item').forEach((el) => {
+        el.addEventListener('click', (e) => {
+          const lang = el.getAttribute('data-lang');
+          if (lang) {
+            localStorage.setItem(storageKey, lang);
+          }
+          const href = el.getAttribute('data-href') || el.getAttribute('href');
+          if (href) {
+            window.location.href = href;
+          }
+        });
+      });
+    }
+
+    
+    try {
+      wireLangMenus();
+      maybeAutoRedirect();
+    } catch (_) {}
+  })();
+</script>
 
 
   <main>
@@ -247,7 +306,7 @@
 <p>Since January 2024, I have been working at <strong>Diamidex</strong> as a Software &amp; DevOps Engineer on the <strong>MICA machine</strong>, an AI-powered system for automated microbiological analysis.<br>
 Our team is responsible for the <strong>entire software stack</strong>: from the user interface built in <strong>Python/Qt</strong> to the software architecture, deployment pipelines, and long-term maintenance.</p>
 <p>At first, we were two engineers covering all aspects of the project together. This gave me the opportunity to gain hands-on experience in every stage of development: UI design, CI/CD, hardware integration, support, and continuous improvement.<br>
-In <strong>July 2024</strong>, I became the <strong>sole engineering lead on the Luminy site</strong>, taking full responsibility for managing the machines, delivering updates, and providing support locally, while continuing to collaborate closely with my teammate now based in Gardanne.</p>
+In <strong>July 2025</strong>, I became the <strong>sole engineering lead on the Luminy site</strong>, taking full responsibility for managing the machines, delivering updates, and providing support locally, while continuing to collaborate closely with my teammate now based in Gardanne.</p>
 <p>Beyond development, I also introduced and implemented an <strong>Agile workflow</strong>, coordinating our small team of three (two engineers + one product owner). This role involves backlog management, sprint planning, and ensuring smooth collaboration between development and product management.</p>
 <hr>
 <h2 id="key-responsibilities">Key Responsibilities</h2>
@@ -290,7 +349,7 @@ In <strong>July 2024</strong>, I became the <strong>sole engineering lead on the
   <section class="container">
     © 
     
-      2024–2025
+      2025
     
     Othman WAETERLOOS. All rights reserved.
   </section>
@@ -329,6 +388,7 @@ In <strong>July 2024</strong>, I became the <strong>sole engineering lead on the
   </script>
 
   
+  
   <script>
     (function(){
       function setup(idBtn, idMenu){
@@ -339,13 +399,6 @@ In <strong>July 2024</strong>, I became the <strong>sole engineering lead on the
         function close(){ menu.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); }
         function toggle(e){ e.preventDefault(); e.stopPropagation(); menu.classList.contains('is-open') ? close() : open(); }
         btn.addEventListener('click', toggle);
-        menu.addEventListener('click', function(e){
-          var item = e.target.closest('.lang-item');
-          if (item){
-            
-            close();
-          }
-        });
         document.addEventListener('click', function(e){
           if (!menu.classList.contains('is-open')) return;
           if (e.target === btn || btn.contains(e.target) || menu.contains(e.target)) return;

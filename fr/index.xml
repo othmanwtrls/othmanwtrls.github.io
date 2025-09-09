@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Othman Wtrls Portfolio</title>
+    <link>https://othmanwtrls.dev/fr/</link>
+    <description>Recent content on Othman Wtrls Portfolio</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://othmanwtrls.dev/fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Développeur logiciel – Sopra Steria</title>
+      <link>https://othmanwtrls.dev/fr/work/sopra/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://othmanwtrls.dev/fr/work/sopra/</guid>
+      <description>Du stage de fin d’études au poste de développeur junior : conception et maintenance d’applications bancaires</description>
+    </item>
+    <item>
+      <title>Ingénieur consultant – Afelio (via Nalys)</title>
+      <link>https://othmanwtrls.dev/fr/work/afelio/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://othmanwtrls.dev/fr/work/afelio/</guid>
+      <description>Ingénieur consultant développant des packages Python pour FN Herstal en méthode Agile</description>
+    </item>
+    <item>
+      <title>Ingénieur logiciel &amp; DevOps – Nalys</title>
+      <link>https://othmanwtrls.dev/fr/work/nalys/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://othmanwtrls.dev/fr/work/nalys/</guid>
+      <description>Consultant DevOps &amp;amp; systèmes embarqués, spécialisé en intégration logicielle</description>
+    </item>
+    <item>
+      <title>À propos de moi</title>
+      <link>https://othmanwtrls.dev/fr/about/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://othmanwtrls.dev/fr/about/</guid>
+      <description>&lt;h1 id=&#34;-à-propos-de-moi&#34;&gt;👨‍💻 À propos de moi&lt;/h1&gt;&#xA;&lt;p&gt;Bonjour et bienvenue !&lt;/p&gt;&#xA;&lt;p&gt;Je suis &lt;strong&gt;ingénieur en informatique&lt;/strong&gt; avec une passion pour l’enseignement et le partage de connaissances.&lt;br&gt;&#xA;Au fil des années, j’ai travaillé sur divers &lt;strong&gt;projets&lt;/strong&gt; tout en accompagnant étudiants et professionnels dans le développement de leurs compétences en &lt;strong&gt;informatique, ingénierie et matières académiques&lt;/strong&gt;.&lt;br&gt;&#xA;Mon objectif est simple : rendre les sujets complexes clairs, pratiques et accessibles — que vous prépariez un examen, démarriez un projet ou soyez simplement curieux d’apprendre.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ingénieur logiciel &amp; DevOps – Diamidex</title>
+      <link>https://othmanwtrls.dev/fr/work/diamidex/</link>
+      <pubDate>Sun, 10 Aug 2025 22:23:45 +0200</pubDate>
+      <guid>https://othmanwtrls.dev/fr/work/diamidex/</guid>
+      <description>De l’UI au CI/CD : ingénieur DevOps contribuant à la solution MICA de Diamidex</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://othmanwtrls.dev/fr/contact/</link>
+      <pubDate>Sun, 10 Aug 2025 09:42:04 +0200</pubDate>
+      <guid>https://othmanwtrls.dev/fr/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ingénieur logiciel – Dynapac</title>
+      <link>https://othmanwtrls.dev/fr/work/dynapac/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://othmanwtrls.dev/fr/work/dynapac/</guid>
+      <description>Développement d’applications de contrôle machines en Python et C# pour équipements de construction</description>
+    </item>
+  </channel>
+</rss>

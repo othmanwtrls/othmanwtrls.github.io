@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<meta name="generator" content="Hugo 0.148.1">
   <meta charset="UTF-8">
-  <title>Othman Wtrls Portfolio</title>
+  <title>À propos de moi</title>
   <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="images/serpent.png">
@@ -75,12 +74,12 @@
   }
 </script>
 
-<body class="page">
+<body class="about">
 
   <header class="site-header">
 <nav class="w3-bar w3-container">
   
-  <a href="/" class="w3-bar-item site-title" style="text-decoration:none;">
+  <a href="/fr/" class="w3-bar-item site-title" style="text-decoration:none;">
     OTHMAN WTRLS PORTFOLIO
   </a>
 
@@ -110,11 +109,11 @@
             aria-controls="langMenuMobile"
             title="Changer de langue">
       <i class="fa-solid fa-globe" aria-hidden="true"></i>
-      <span class="lang-badge">EN</span>
+      <span class="lang-badge">FR</span>
     </button>
     <div id="langMenuMobile" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-      <button class="lang-item " role="menuitem" data-lang="fr" data-href="/fr/">Français</button>
-      <button class="lang-item is-current" role="menuitem" data-lang="en" data-href="/">English</button>
+      <button class="lang-item is-current" role="menuitem" data-lang="fr" data-href="/fr/about/">Français</button>
+      <button class="lang-item " role="menuitem" data-lang="en" data-href="/about/">English</button>
     </div>
   </div>
 
@@ -122,15 +121,15 @@
   <div class="w3-right w3-hide-small" style="display:flex; align-items:center; gap:.5rem;">
     
       
-        <a href="/about/" class="w3-bar-item" style="text-decoration:none;">
-          About
+        <a href="/fr/about/" class="w3-bar-item" style="text-decoration:none;">
+          À propos
         </a>
       
-        <a href="/work/" class="w3-bar-item" style="text-decoration:none;">
-          Work
+        <a href="/fr/work/" class="w3-bar-item" style="text-decoration:none;">
+          Expérience
         </a>
       
-        <a href="/contact/" class="w3-bar-item" style="text-decoration:none;">
+        <a href="/fr/contact/" class="w3-bar-item" style="text-decoration:none;">
           Contact
         </a>
       
@@ -139,11 +138,11 @@
     <div class="lang-switcher">
       <button id="langToggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" title="Changer de langue">
         <i class="fa-solid fa-globe" aria-hidden="true"></i>
-        <span class="lang-badge">EN</span>
+        <span class="lang-badge">FR</span>
       </button>
       <div id="langMenu" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-        <button class="lang-item " role="menuitem" data-lang="fr" data-href="/fr/">Français</button>
-        <button class="lang-item is-current" role="menuitem" data-lang="en" data-href="/">English</button>
+        <button class="lang-item is-current" role="menuitem" data-lang="fr" data-href="/fr/about/">Français</button>
+        <button class="lang-item " role="menuitem" data-lang="en" data-href="/about/">English</button>
       </div>
     </div>
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
@@ -157,15 +156,15 @@
   <div class="w3-bar-block w3-card">
     
       
-        <a href="/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          About
+        <a href="/fr/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          À propos
         </a>
       
-        <a href="/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          Work
+        <a href="/fr/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+          Expérience
         </a>
       
-        <a href="/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
+        <a href="/fr/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
           Contact
         </a>
       
@@ -176,7 +175,7 @@
 
 <script>
   (function() {
-    const htmlLang = "en"; 
+    const htmlLang = "fr"; 
     const storageKey = 'siteLang';
 
     function getPreferredLang() {
@@ -236,67 +235,199 @@
 
   <main>
     
-<div class="w3-container w3-center">
+<article class="about-page w3-container">
+  <style>
+    .about-section { margin: 2.5rem 0; }
+    .about-h2 { margin: 2.25rem 0; }
+    .about-h3 { margin: 1.5rem 0; }
+  </style>
 
   
-  <img src="/images/avatar.png"
-       alt="Othman WAETERLOOS"
-       class="w3-circle w3-margin-bottom"
-       style="width: 250px; height: 250px; object-fit: cover;">
-
-  
-  <h1 class="w3-text-light-grey w3-margin home-title">Othman WAETERLOOS</h1>
-  <h3 class="w3-text-light-grey w3-margin">Full Stack DevOps</h3>
-
-  
-  <div class="w3-margin-top social-icons">
-  
-    <a href="https://linkedin.com/in/othman-waeterloos-8b5440135" class="w3-margin"
-       aria-label="LinkedIn"
-       title="LinkedIn"
-       target="_blank" rel="noopener"
-       style="text-decoration: none; color: #fafafa;">
-      <i class="fa-brands fa-linkedin fa-2x"></i>
-    </a>
-  
-    <a href="https://github.com/othmanwtrls/" class="w3-margin"
-       aria-label="Github"
-       title="Github"
-       target="_blank" rel="noopener"
-       style="text-decoration: none; color: #fafafa;">
-      <i class="fa-brands fa-github fa-2x"></i>
-    </a>
-  
-  </div>
-
-  
-  <div class="cta-row w3-margin-top">
+  <section class="about-hero w3-center">
     
-      <a href='https://calendly.com/othmanwtrls/prise-de-rdv'
-        class="calendly-btn w3-small"
-        aria-label="Schedule a Meeting"
-        title="Schedule a Meeting"
-        target="_blank" rel="noopener">
-        <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
-        <span>Schedule a Meeting</span>
-      </a>
+      <img src="/images/avatar.png" alt="Avatar" class="about-avatar" loading="lazy" />
     
-
+    <h1 class="w3-text-light-grey about-title">À propos de moi</h1>
     
-      <a href="/cv/CV%20Othman%20Eng%20%282023.06.01%29.pdf"
-        class="cv-link w3-small"
-        aria-label="Download my CV (PDF)"
-        title="Download my CV (PDF)"
-        download>
-        <i class="fa-solid fa-file-arrow-down"></i>
-        <span>CV (PDF)</span>
-      </a>
-    
-  </div>
+  </section>
 
+  
+  
 
-
+  
+  <section class="about-section">
+    <div class="about-card">
+      
+        <div class="about-lead"><h1 id="-à-propos-de-moi">👨‍💻 À propos de moi</h1>
+<p>Bonjour et bienvenue !</p>
+<p>Je suis <strong>ingénieur en informatique</strong> avec une passion pour l’enseignement et le partage de connaissances.<br>
+Au fil des années, j’ai travaillé sur divers <strong>projets</strong> tout en accompagnant étudiants et professionnels dans le développement de leurs compétences en <strong>informatique, ingénierie et matières académiques</strong>.<br>
+Mon objectif est simple : rendre les sujets complexes clairs, pratiques et accessibles — que vous prépariez un examen, démarriez un projet ou soyez simplement curieux d’apprendre.</p>
 </div>
+      
+    </div>
+  </section>
+
+  
+  
+    
+  
+    
+      
+      
+      
+      
+
+      <section class="about-section">
+        <h2 class="about-h2">🎯 Ce que je propose</h2>
+
+        
+        
+        
+          <div class="about-grid">
+            
+              
+            
+              
+                
+                
+                
+                <div class="about-card">
+                  <h3 class="about-h3">🛠️ Projets d’ingénierie &amp; développement</h3>
+                  <div class="about-content"><ul>
+<li><strong>Projets d’ingénierie complets</strong> (conception, développement, prototypage)</li>
+<li><strong>Création de sites internet</strong> (portfolio, vitrine, blog, site professionnel)</li>
+<li><strong>Applications &amp; web apps</strong> adaptées aux besoins spécifiques</li>
+</ul>
+<p><em>De l’idée à la mise en production : je vous accompagne pour concevoir, développer et déployer des projets complets, qu’ils soient techniques, académiques ou professionnels.</em></p></div>
+                </div>
+              
+            
+              
+                
+                
+                
+                <div class="about-card">
+                  <h3 class="about-h3">💻 Coaching en informatique &amp; IT</h3>
+                  <div class="about-content"><ul>
+<li>Programmation &amp; applications : <strong>Python, C, C#, C++</strong></li>
+<li>Développement web : <strong>HTML, CSS, Bootstrap, Hugo</strong></li>
+<li>Bases de données : <strong>SQL</strong></li>
+<li>Outils &amp; automatisation : <strong>Git, CI/CD, Make, Excel, VBA</strong></li>
+<li>Fondamentaux : bases de l’informatique, algorithmes, accompagnement de projets</li>
+</ul>
+<p><em>Apprenez l’essentiel, renforcez vos compétences en programmation ou bénéficiez d’un accompagnement pour vos projets personnels ou académiques.</em></p></div>
+                </div>
+              
+            
+              
+                
+                
+                
+                <div class="about-card">
+                  <h3 class="about-h3">📚 Soutien scolaire collège &amp; lycée</h3>
+                  <div class="about-content"><ul>
+<li><strong>Sciences de l’ingénieur</strong></li>
+<li><strong>Technologie &amp; informatique</strong></li>
+<li><strong>Mathématiques</strong></li>
+<li><strong>Physique &amp; chimie</strong></li>
+</ul>
+<p><em>Des cours personnalisés pour prendre confiance, progresser et rendre l’apprentissage plus agréable.</em></p></div>
+                </div>
+              
+            
+          </div>
+        
+      </section>
+    
+  
+    
+      
+      
+      
+      
+
+      <section class="about-section">
+        <h2 class="about-h2">🧑‍🏫 Mon approche pédagogique</h2>
+
+        
+        
+        
+          
+          <div class="about-card about-content"><ul>
+<li>Des explications claires et simples</li>
+<li>Des exercices progressifs favorisant l’autonomie</li>
+<li>Une adaptation à vos besoins, votre niveau et votre rythme</li>
+<li>Un accompagnement bienveillant, structuré et motivant</li>
+</ul>
+<p>Je crois que <strong>chacun peut réussir</strong> avec la bonne méthode et le bon soutien.</p></div>
+        
+      </section>
+    
+  
+    
+      
+      
+      
+      
+
+      <section class="about-section">
+        <h2 class="about-h2">📍 Disponibilités</h2>
+
+        
+        
+        
+          
+          <div class="about-card about-content"><ul>
+<li><strong>Cours en ligne</strong> (partout 🌍)</li>
+<li><strong>Cours en présentiel</strong> (selon localisation)</li>
+</ul>
+<p>✨ Envie d’en savoir plus ou de travailler ensemble ?<br>
+N’hésitez pas à parcourir mon site et à me contacter — je serai ravi d’échanger avec vous !</p></div>
+        
+      </section>
+    
+  
+    
+      
+      
+      
+      
+
+      <section class="about-section">
+        <h2 class="about-h2">🎓 Diplômes</h2>
+
+        
+        
+        
+          
+          <div class="about-card about-content"><ul>
+<li><strong>Diplôme d’ingénieur</strong> (2020) : Nouvelles technologies et énergies renouvelables</li>
+<li><strong>TOEIC</strong> (2021) : 855 points, test officiel d’anglais</li>
+<li><strong>BNSSA</strong> (2012, renouvelé en 2021) : Brevet de surveillant de baignade</li>
+<li><strong>BAFA</strong> (2012) : Brevet d’aptitude aux fonctions d’animateur</li>
+<li><strong>PSE1</strong> (2012, renouvelé en 2021) : Premiers secours en équipe de niveau 1</li>
+<li><strong>PSC1</strong> (2010) : Prévention et secours civiques de niveau 1</li>
+<li><strong>Permis de conduire</strong> (2012)</li>
+<li><strong>Permis bateau</strong> (2012)</li>
+</ul>
+</div>
+        
+      </section>
+    
+  
+
+  
+  <section class="about-section w3-center">
+    <div class="cta-row">
+      <a class="cv-link" href="/fr/contact/" aria-label="Me contacter" title="Me contacter">
+        <i class="fa-regular fa-envelope"></i>
+        Me contacter
+      </a>
+    </div>
+  </section>
+
+</article>
 
   </main>
 
@@ -306,7 +437,7 @@
     
       2025
     
-    Othman WAETERLOOS. All rights reserved.
+    Othman WAETERLOOS. Tous droits réservés.
   </section>
 </footer>
 
@@ -369,7 +500,7 @@
   </script>
 
   
-  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <button id="backToTop" class="back-to-top" aria-label="Haut de page" title="Haut de page">
     <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </button>
 
