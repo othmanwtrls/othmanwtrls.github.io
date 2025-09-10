@@ -13,7 +13,7 @@
   
     
   
-  <link rel="stylesheet" href="/css/main.min.cf26b6161060b07ee36f602d9d0b5e1475dfa9216abec6f2d5692029c91edcb7.css" integrity="sha256-zya2FhBgsH7jb2AtnQteFHXfqSFqvsby1WkgKcke3Lc=">
+  <link rel="stylesheet" href="/css/main.min.6f0a2f429b0334a0bfc97de51473cb641580531f2ec383e0a5612ef646fb82cf.css" integrity="sha256-bwovQpsDNKC/yX3lFHPLZBWAUx8uw4PgpWEu9kb7gs8=">
   <script>
     (function(){
       try{
@@ -392,14 +392,24 @@ The experience started with an intensive <strong>three-month training program</s
 
   
   
+  <script defer src="/js/header-title-fit.min.5b8a92368d2a3efeff800d5f67aa2d31f978345bdf39fba305c29ae972e1726c.js" integrity="sha256-W4qSNo0qPv7/gA1fZ6otMfl4NFvfOfujBcKa6XLhcmw="></script>
+
+  
+  
+    
+    <script defer src="/js/cv-warning.min.8049662b82457919db17ed720ce610e25c94ce00fa648d7a2ad55879bdbdba7d.js" integrity="sha256-gElmK4JFeRnbF&#43;1yDOYQ4lyUzgD6ZI16KtVYeb29un0="></script>
+  
+
+  
+  
   <script>
     (function(){
       function setup(idBtn, idMenu){
         var btn = document.getElementById(idBtn);
         var menu = document.getElementById(idMenu);
         if (!btn || !menu) return;
-        function open(){ menu.classList.add('is-open'); btn.setAttribute('aria-expanded','true'); }
-        function close(){ menu.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); }
+        function open(){ menu.classList.add('is-open'); menu.style.display='block'; btn.setAttribute('aria-expanded','true'); }
+        function close(){ menu.classList.remove('is-open'); menu.style.display='none'; btn.setAttribute('aria-expanded','false'); }
         function toggle(e){ e.preventDefault(); e.stopPropagation(); menu.classList.contains('is-open') ? close() : open(); }
         btn.addEventListener('click', toggle);
         document.addEventListener('click', function(e){

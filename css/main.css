@@ -127,6 +127,10 @@ body.about main{
 nav.w3-bar{ padding:.5rem 0; }
 /* Allow dropdowns to overflow the navbar (override W3) */
 .site-header nav.w3-bar{ overflow: visible; }
+/* Keep navbar on one line and let title truncate if needed */
+.site-header nav.w3-bar{ white-space: nowrap; }
+/* Title stays on one line; size adjusts via JS for readability */
+.site-title{ white-space: nowrap; }
 
 /* Fixed site header */
 .site-header{ position: fixed; top:0; left:0; right:0; z-index: 6000; background:#2c2c2c; border-bottom:1px solid #3a3a3a; }
@@ -221,9 +225,12 @@ main{ padding-top: 72px; }
   padding: 6px;
   display: none;
   z-index: 7000;
+  /* Allow items to wrap vertically inside dropdown (navbar is nowrap) */
+  white-space: normal;
 }
 .lang-menu.is-open{ display: block; }
 .lang-item{
+  display: block;
   width: 100%;
   text-align: left;
   padding: 10px 10px;
@@ -261,8 +268,8 @@ main{ padding-top: 72px; }
   .w3-bar .theme-toggle{ width:40px; height:40px; }
   .w3-bar .lang-toggle{ width:40px; height:40px; }
   #hamburgerBtn i{ font-size:18px; line-height:1; display:block; }
-  /* Slightly smaller site title on mobile */
-  .site-title{ font-size:1.1rem; }
+  /* Base mobile size; JS will fine-tune to fit */
+  .site-title{ font-size: clamp(0.95rem, 5.2vw, 1.2rem); }
 }
 
 /* Simple dark scrollbars */
