@@ -1,240 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Autres expériences professionnelles</title>
-  <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="images/serpent.png">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
-  
-  
+  <head>
+    <meta charset="UTF-8">
+    <title>Autres expériences professionnelles</title>
+    <meta name="description" content="Othman WAETERLOOS&#39;s personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/images/serpent.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
+    
+    
+      
+    
+    <link rel="stylesheet" href="/css/main.min.08144ad85924ce135e479840e7e3c5eafee7336090d23ef3ad085506e46ed9e3.css" integrity="sha256-CBRK2FkkzhNeR5hA5&#43;PF6v7nM2CQ0j7zrQhVBuRu2eM=">
+    
+    <script src="/js/theme-init.min.8dbc21befe41296bdc933a98d8e355d092d42b85ad04cabee7ceb0a1e2ee2b66.js" integrity="sha256-jbwhvv5BKWvckzqY2ONV0JLUK4WtBMq&#43;586woeLuK2Y="></script>
+  </head>
+
+
+  <body class="work">
+    <head>
   
-  <link rel="stylesheet" href="/css/main.min.6f0a2f429b0334a0bfc97de51473cb641580531f2ec383e0a5612ef646fb82cf.css" integrity="sha256-bwovQpsDNKC/yX3lFHPLZBWAUx8uw4PgpWEu9kb7gs8=">
-  <script>
-    (function(){
-      try{
-        var saved = localStorage.getItem('theme');
-        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-        if (saved === 'light' || (!saved && prefersLight)) {
-          document.documentElement.setAttribute('data-theme','light');
-        }
-      }catch(e){}
-    })();
-  </script>
+  
+  <script defer src="/js/header.min.4209ce489f64ecfd9e4b190b3ef25a3c769a21d8054192021105d13a4fa264b0.js" integrity="sha256-QgnOSJ9k7P2eSxkLPvJaPHaaIdgFQZICEQXROk&#43;iZLA="></script>
 </head>
 
-<script>
-  function toggleMenu(){
-    var panel = document.getElementById('mobileMenu');
-    var btn = document.getElementById('hamburgerBtn');
-    var isOpen = panel.classList.contains('is-open');
-
-    function open(){
-      panel.classList.remove('w3-hide');
-      
-      panel.style.height = '0px';
-      
-      void panel.offsetHeight;
-      var target = panel.scrollHeight;
-      panel.classList.add('is-open');
-      panel.style.height = target + 'px';
-      btn.setAttribute('aria-expanded','true');
-      var onEnd = function(e){
-        if (e.propertyName === 'height'){
-          panel.style.height = 'auto';
-          panel.removeEventListener('transitionend', onEnd);
-        }
-      };
-      panel.addEventListener('transitionend', onEnd);
-    }
-
-    function close(){
-      
-      var current = panel.scrollHeight;
-      panel.style.height = current + 'px';
-      
-      void panel.offsetHeight;
-      panel.style.height = '0px';
-      btn.setAttribute('aria-expanded','false');
-      var onEnd = function(e){
-        if (e.propertyName === 'height'){
-          panel.classList.remove('is-open');
-          if (!panel.classList.contains('w3-hide')) panel.classList.add('w3-hide');
-          panel.removeEventListener('transitionend', onEnd);
-        }
-      };
-      panel.addEventListener('transitionend', onEnd);
-    }
-
-    if (!isOpen) open(); else close();
-  }
-</script>
-
-<body class="work">
-
-  <header class="site-header">
-<nav class="w3-bar w3-container">
-  
-  <a href="/fr/" class="w3-bar-item site-title" style="text-decoration:none;">
-    OTHMAN WTRLS PORTFOLIO
-  </a>
-
-  
-  <button id="hamburgerBtn"
-          class="w3-bar-item w3-right w3-hide-medium w3-hide-large"
-          onclick="toggleMenu()"
-          aria-controls="mobileMenu"
-          aria-expanded="false"
-          aria-label="Ouvrir le menu">
-    <i class="fa fa-bars"></i>
-  </button>
-
-  
-  <button id="themeToggleMobile"
-          class="w3-bar-item w3-right w3-hide-medium w3-hide-large theme-toggle"
-          aria-label="Changer le thème" title="Toggle theme">
-    <i class="fa-regular fa-moon" aria-hidden="true"></i>
-  </button>
-
-  
-  <div class="w3-right w3-hide-medium w3-hide-large lang-switcher">
-    <button id="langToggleMobile"
-            class="w3-bar-item lang-toggle"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-controls="langMenuMobile"
-            title="Changer de langue">
-      <i class="fa-solid fa-globe" aria-hidden="true"></i>
-      <span class="lang-badge">FR</span>
-    </button>
-    <div id="langMenuMobile" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-      <button class="lang-item is-current" role="menuitem" data-lang="fr" data-href="/fr/work/other/">Français</button>
-      <button class="lang-item " role="menuitem" data-lang="en" data-href="/work/other/">English</button>
-    </div>
-  </div>
-
-  
-  <div class="w3-right w3-hide-small" style="display:flex; align-items:center; gap:.5rem;">
+<header class="site-header">
+  <nav class="w3-bar w3-container">
     
-      
-        <a href="/fr/about/" class="w3-bar-item" style="text-decoration:none;">
-          À propos
-        </a>
-      
-        <a href="/fr/work/" class="w3-bar-item" style="text-decoration:none;">
-          Expérience
-        </a>
-      
-        <a href="/fr/contact/" class="w3-bar-item" style="text-decoration:none;">
-          Contact
-        </a>
-      
+    <a id="siteTitle" href="/fr/" class="w3-bar-item" style="text-decoration:none;">
+      OTHMAN PORTFOLIO
+    </a>
+
     
-    
-    <div class="lang-switcher">
-      <button id="langToggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" title="Changer de langue">
-        <i class="fa-solid fa-globe" aria-hidden="true"></i>
-        <span class="lang-badge">FR</span>
-      </button>
-      <div id="langMenu" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
-        <button class="lang-item is-current" role="menuitem" data-lang="fr" data-href="/fr/work/other/">Français</button>
-        <button class="lang-item " role="menuitem" data-lang="en" data-href="/work/other/">English</button>
+    <div id="headerMenu" class="w3-right" style="display:flex; align-items:center;">
+      <div id="writtenMenu" class="w3-hide-medium w3-hide-small" style="display:flex; align-items:center;">
+        
+          
+            <a href="/fr/about/" class="w3-bar-item" style="text-decoration:none;">
+              À propos
+            </a>
+          
+            <a href="/fr/work/" class="w3-bar-item" style="text-decoration:none;">
+              Expérience
+            </a>
+          
+            <a href="/fr/contact/" class="w3-bar-item" style="text-decoration:none;">
+              Contact
+            </a>
+          
+        
       </div>
+
+      
+      <div class="lang-switcher">
+        <button id="langToggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false" title="Changer de langue">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span class="lang-badge">FR</span>
+        </button>
+        <div id="langMenu" class="lang-menu w3-card" role="menu" aria-label="Choisir une langue">
+          <button class="lang-item is-current" role="menuitem" data-lang="fr" data-href="/fr/work/other/">Français</button>
+          <button class="lang-item " role="menuitem" data-lang="en" data-href="/work/other/">English</button>
+        </div>
+      </div>
+
+      
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+        <i class="fa-regular fa-moon" aria-hidden="true"></i>
+      </button>
+
+      
+      <button id="hamburgerBtn"
+              class="w3-bar-item w3-hide-large w3-right"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              aria-label="Ouvrir le menu">
+        <i class="fa fa-bars"></i>
+      </button>
     </div>
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
-      <i class="fa-regular fa-moon" aria-hidden="true"></i>
-    </button>
-  </div>
-</nav>
+  </nav>
 
-
-<div id="mobileMenu" class="mobile-menu w3-hide w3-hide-medium w3-hide-large w3-container">
-  <div class="w3-bar-block w3-card">
-    
+  
+  <div id="mobileMenu" class="mobile-menu w3-hide w3-container">
+    <div class="w3-bar-block w3-card">
       
-        <a href="/fr/about/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          À propos
-        </a>
+        
+          <a href="/fr/about/" class="w3-bar-item w3-button" style="text-decoration:none;">
+            À propos
+          </a>
+        
+          <a href="/fr/work/" class="w3-bar-item w3-button" style="text-decoration:none;">
+            Expérience
+          </a>
+        
+          <a href="/fr/contact/" class="w3-bar-item w3-button" style="text-decoration:none;">
+            Contact
+          </a>
+        
       
-        <a href="/fr/work/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          Expérience
-        </a>
-      
-        <a href="/fr/contact/" class="w3-bar-item w3-button" onclick="toggleMenu()" style="text-decoration:none;">
-          Contact
-        </a>
-      
-    
+    </div>
   </div>
-</div>
 </header>
 
-<script>
-  (function() {
-    const htmlLang = "fr"; 
-    const storageKey = 'siteLang';
-
-    function getPreferredLang() {
-      const stored = localStorage.getItem(storageKey);
-      if (stored === 'en' || stored === 'fr') return stored;
-      const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
-      return (nav && nav.toLowerCase().startsWith('fr')) ? 'fr' : 'en';
-    }
-
-    function currentIs(lang) {
-      return htmlLang === lang;
-    }
-
-    function findLangEl(lang) {
-      const id = (window.matchMedia('(max-width: 600px)').matches) ? 'langMenuMobile' : 'langMenu';
-      const container = document.getElementById(id) || document;
-      return container.querySelector('.lang-item[data-lang="' + lang + '"]');
-    }
-
-    function maybeAutoRedirect() {
-      const stored = localStorage.getItem(storageKey);
-      const target = getPreferredLang();
-      if (currentIs(target)) return; 
+    <main>
       
-      if (!stored) {
-        const el = findLangEl(target);
-        const href = el && (el.getAttribute('data-href') || el.getAttribute('href'));
-        if (href) {
-          window.location.href = href;
-        }
-      }
-    }
-
-    function wireLangMenus() {
-      document.querySelectorAll('.lang-item').forEach((el) => {
-        el.addEventListener('click', (e) => {
-          const lang = el.getAttribute('data-lang');
-          if (lang) {
-            localStorage.setItem(storageKey, lang);
-          }
-          const href = el.getAttribute('data-href') || el.getAttribute('href');
-          if (href) {
-            window.location.href = href;
-          }
-        });
-      });
-    }
-
-    
-    try {
-      wireLangMenus();
-      maybeAutoRedirect();
-    } catch (_) {}
-  })();
-</script>
-
-
-  <main>
-    
 <article class="w3-container work-single">
   
   
@@ -346,9 +216,8 @@ Préparation des repas et travail en cuisine dans un environnement dynamique, av
   <p class="w3-section"><a href="/fr/work/">← Retour</a></p>
 </article>
 
-  </main>
-
-  <footer class="footer">
+    </main>
+    <footer class="footer">
   <section class="container">
     © 
     
@@ -359,94 +228,13 @@ Préparation des repas et travail en cuisine dans un environnement dynamique, av
 </footer>
 
 
-  <script>
-    (function(){
-      function setIcon(){
-        var isLight = document.documentElement.getAttribute('data-theme') === 'light';
-        var btns = [
-          document.getElementById('themeToggle'),
-          document.getElementById('themeToggleMobile')
-        ].filter(Boolean);
-        btns.forEach(function(btn){
-          var i = btn.querySelector('i');
-          if (i){ i.className = isLight ? 'fa-regular fa-sun' : 'fa-regular fa-moon'; }
-        });
-      }
-      function toggleTheme(){
-        var current = document.documentElement.getAttribute('data-theme');
-        var next = current === 'light' ? '' : 'light';
-        if (next) document.documentElement.setAttribute('data-theme', next);
-        else document.documentElement.removeAttribute('data-theme');
-        try{ localStorage.setItem('theme', next || 'dark'); }catch(e){}
-        setIcon();
-      }
-      document.addEventListener('DOMContentLoaded', function(){
-        var b1 = document.getElementById('themeToggle');
-        var b2 = document.getElementById('themeToggleMobile');
-        if (b1) b1.addEventListener('click', toggleTheme);
-        if (b2) b2.addEventListener('click', toggleTheme);
-        setIcon();
-      });
-    })();
-  </script>
-
-  
-  
-  <script defer src="/js/header-title-fit.min.5b8a92368d2a3efeff800d5f67aa2d31f978345bdf39fba305c29ae972e1726c.js" integrity="sha256-W4qSNo0qPv7/gA1fZ6otMfl4NFvfOfujBcKa6XLhcmw="></script>
-
-  
-  
-    
-    <script defer src="/js/cv-warning.min.8049662b82457919db17ed720ce610e25c94ce00fa648d7a2ad55879bdbdba7d.js" integrity="sha256-gElmK4JFeRnbF&#43;1yDOYQ4lyUzgD6ZI16KtVYeb29un0="></script>
-  
-
-  
-  
-  <script>
-    (function(){
-      function setup(idBtn, idMenu){
-        var btn = document.getElementById(idBtn);
-        var menu = document.getElementById(idMenu);
-        if (!btn || !menu) return;
-        function open(){ menu.classList.add('is-open'); menu.style.display='block'; btn.setAttribute('aria-expanded','true'); }
-        function close(){ menu.classList.remove('is-open'); menu.style.display='none'; btn.setAttribute('aria-expanded','false'); }
-        function toggle(e){ e.preventDefault(); e.stopPropagation(); menu.classList.contains('is-open') ? close() : open(); }
-        btn.addEventListener('click', toggle);
-        document.addEventListener('click', function(e){
-          if (!menu.classList.contains('is-open')) return;
-          if (e.target === btn || btn.contains(e.target) || menu.contains(e.target)) return;
-          close();
-        });
-        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
-      }
-      document.addEventListener('DOMContentLoaded', function(){
-        setup('langToggle', 'langMenu');
-        setup('langToggleMobile', 'langMenuMobile');
-      });
-    })();
-  </script>
-
-  
-  <button id="backToTop" class="back-to-top" aria-label="Haut de page" title="Haut de page">
-    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+<button id="backToTop" class="back-to-top" aria-label="Haut de page" title="Haut de page">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </button>
 
-  <script>
-    (function(){
-      var btn = document.getElementById('backToTop');
-      if(!btn) return;
-      var toggle = function(){
-        if (window.scrollY > 200) btn.classList.add('is-visible');
-        else btn.classList.remove('is-visible');
-      };
-      window.addEventListener('scroll', toggle, { passive: true });
-      document.addEventListener('DOMContentLoaded', toggle);
-      btn.addEventListener('click', function(){
-        var prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-      });
-    })();
-  </script>
 
-</body>
+
+<script defer src="/js/footer.min.00ae93fe52da2ec15e3f5ceebe3524d47d7665d32573fd1a7b6eed6c43c93177.js" integrity="sha256-AK6T/lLaLsFeP1zuvjUk1H12ZdMlc/0ae27tbEPJMXc="></script>
+
+  </body>
 </html>

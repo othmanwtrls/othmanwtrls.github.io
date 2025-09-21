@@ -1,0 +1,1 @@
+(function(){try{var e=localStorage.getItem("theme"),t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches;(e==="light"||!e&&t)&&document.documentElement.setAttribute("data-theme","light")}catch{}})()
