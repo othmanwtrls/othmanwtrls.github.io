@@ -100,7 +100,7 @@ body.about main{
 }
 
 /* Styles unifiés pour les deux boutons */
-.calendly-btn,
+.booking-btn,
 .cv-link {
   display: inline-flex;
   align-items: center;
@@ -114,7 +114,7 @@ body.about main{
   transition: transform .15s ease, opacity .15s ease, background-color .2s ease, border-color .2s ease;
 }
 
-.calendly-btn:hover,
+.booking-btn:hover,
 .cv-link:hover {
   opacity: 1;
   transform: translateY(-1px);
@@ -187,12 +187,51 @@ main{ padding-top: 72px; }
 }
 .contact-info .contact-link:hover{ border-bottom-color: currentColor; }
 
+.contact-page{
+  width: 100%;
+  max-width: 960px;
+}
+
+.booking-section{
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.booking-title{
+  margin-bottom: 3rem;
+}
+
+.booking-embed-frame{
+  background: #ffffff;
+  border: 1px solid #dfe3ea;
+  border-radius: 18px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.22);
+  color-scheme: light;
+}
+
+.booking-embed-frame iframe{
+  display: block;
+  background: #ffffff;
+  color-scheme: light;
+}
+
+.booking-embed-iframe{
+  height: min(70vh, 760px);
+  min-height: 600px;
+}
+
 /* Light theme: home buttons and contact links visible */
-[data-theme="light"] .calendly-btn,
+[data-theme="light"] .booking-btn,
 [data-theme="light"] .cv-link{
   border-color:#111; color:#111; background: transparent;
 }
 [data-theme="light"] .contact-info .contact-link{ color:#111; }
+[data-theme="light"] .booking-embed-frame{
+  border-color:#d9dde5;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, .08);
+}
 
 /* Toggle buttons (theme + language) */
 .theme-toggle, .lang-toggle{
@@ -333,13 +372,29 @@ html{ scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg); }
   .w3-container{ padding-left:1rem; padding-right:1rem; }
   .social-icons a i{ font-size:2.2rem; }
   .cta-row{ gap:.5rem; }
-  .calendly-btn, .cv-link{ width:100%; justify-content:center; }
+  .booking-btn, .cv-link{ width:100%; justify-content:center; }
+  .booking-section{ margin-top: 4rem; }
+  .booking-title{ margin-bottom: 1.5rem; }
+  .booking-embed-frame{ border-radius: 14px; }
+  .booking-embed-iframe{
+    min-height: 72vh;
+    height: 72vh;
+  }
   /* Improve line spacing for wrapped author name on home */
   .home-title{ line-height: 1.2; }
 }
 
 /* Slightly larger breakpoint to ensure comfortable spacing on bigger phones */
-@media (max-width:640px){ .home-title{ line-height: 1.2; } }
+@media (max-width:640px){
+  .home-title{ line-height: 1.2; }
+  .contact-page{ max-width: 100%; }
+  .booking-section{ margin-top: 5rem; }
+  .booking-title{ margin-bottom: 2rem; }
+  .booking-embed-iframe{
+    min-height: 68vh;
+    height: 68vh;
+  }
+}
 
 /* Global heading line-height for readability */
 h1, h2, h3{ line-height: 1.2; }
